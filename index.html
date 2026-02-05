@@ -1279,6 +1279,15 @@
     </footer>
 
     <script>
+        window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        };
+        
+        // Also ensure we're at top when page loads
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
         const navbar = document.getElementById('navbar');
         const oceanBackground = document.getElementById('oceanBackground');
 
