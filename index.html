@@ -261,29 +261,59 @@
             transform: translateY(-5px);
         }
 
+        #faq {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            padding: 80px 0px 80px 150px; /* Exact same padding as #about */
+            max-width: 1200px;
+            margin: 0 auto 0 0; 
+        }
+
+        #faq h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 900;
+            padding-left: 10px; /* Matching the about header indentation */
+        }
+
         .faq-accordion {
-            max-width: 800px;
-            margin: 0 auto;
-            background: rgba(100, 150, 255, 0.2); 
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
+            width: 100%;
+            max-width: 1000px; /* Matches .about-card max-width */
+            margin-left: 0; 
+            background: rgba(0, 10, 20, 0.1); /* Match about-card background */
+            backdrop-filter: blur(12px);
+            border-radius: 10px; /* About-card used 10px */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
 
         .faq-item {
-            background: rgba(100, 150, 255, 0.15);
-            backdrop-filter: blur(10px);
-            padding: 0;
-            margin-bottom: 0px;
-            border-radius: 0px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-            overflow: hidden;
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            background: transparent; /* Remove the blue tint */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
         }
 
         .faq-item:hover {
-            background: rgba(100, 150, 255, 0.25);
-            border-color: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.05); /* Very subtle hover */
+        }
+
+        .faq-item h3 {
+            font-family: 'Courier New', monospace; /* Keep consistent font */
+            font-size: 17px; /* Matching About p size */
+            color: #e0e0e0;
+            margin-bottom: 0; /* Resetting the 10px margin you had */
+        }
+
+        .faq-answer p {
+            font-size: 16px;
+            color: #cccccc;
+            padding-bottom: 20px; /* Add space at the bottom of the answer */
         }
 
         .faq-item:last-child {
@@ -955,13 +985,12 @@
         }
 
         .about-card {
-            background: rgba(0, 10, 20, 0.1);
+            background: rgba(0, 10, 20, 0.25);
             backdrop-filter: blur(12px);
             border-radius: 10px;
             padding: 40px;
             width: 100%;
             max-width: 1000px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
@@ -1269,7 +1298,7 @@
         </section>
 
         <section id="faq" class="section">
-            <h2>Frequently Asked Questions</h2>
+            <h2>FAQs</h2>
             
             <div class="faq-accordion">
                 <div class="faq-item">
