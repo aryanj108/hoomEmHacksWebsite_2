@@ -971,6 +971,43 @@
             color: #e0e0e0;
             margin-bottom: 20px;
         }
+
+        .landing-submarine {
+            position: absolute;
+            left: 20px;              
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .landing-submarine img {
+            width: 520px;             
+            max-width: 60vw;
+            height: auto;
+            filter: drop-shadow(0 20px 60px rgba(0, 217, 255, 0.4));
+            animation: submarineFloat 8s ease-in-out infinite;
+        }
+
+        @keyframes submarineFloat {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-25px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .landing-submarine img {
+                width: 300px;
+                opacity: 0.5;
+            }
+
+            .landing-submarine {
+                left: -120px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1008,6 +1045,10 @@
 
     <!-- Landing Section - Now part of seamless scroll -->
     <section class="landing-section" id="landingSection">
+        <div class="landing-submarine">
+            <img src="../assets/submarine.svg" alt="Submarine">
+        </div>
+
         <div class="landing-title">
             <h1>University of Texas at Austin Presents</h1>
             <h2>HOOK 'EM HACKS</h2>
