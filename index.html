@@ -993,10 +993,10 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
-        <div class="navbar-logo">
+        <a href="#" class="navbar-logo" id="logoLink">
             <img src="../assets/scroll_asset.jpg" alt="Hook 'em Hacks Logo" class="navbar-logo-img">
-            <span>Hook 'em Hacks</span>
-        </div>
+            <span></span>
+        </a>
         <ul class="navbar-links">
             <li><a href="#about">About</a></li>
             <li><a href="#schedule">Schedule</a></li>
@@ -1539,6 +1539,11 @@
 
         updateIndicators();
         updateTeamDisplay();
+
+        document.getElementById('logoLink').addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
     </script>
 </body>
 </html>
