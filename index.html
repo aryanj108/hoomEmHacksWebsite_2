@@ -1106,7 +1106,7 @@
 
         /* Individual Cards */
         .track-card {
-            background: rgba(255, 255, 255, 0.05); 
+            background: rgba(63, 63, 63, 0.2); 
             
             backdrop-filter: blur(12px); 
             -webkit-backdrop-filter: blur(12px); 
@@ -1660,6 +1660,25 @@ window.addEventListener("scroll", () => {
             if (oceanBubblesEl) {
                 oceanBubblesEl.style.transform = `translateY(${scrolled * 0.7}px)`;
             }
+        });
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            
+            if (!isScrollingFromClick) {
+                // Scrolling down - hide navbar
+                if (scrollTop > lastScrollTop) {
+                    navbar.classList.add('hidden');
+                    navbar.classList.remove('visible');
+                } 
+                // Scrolling up - show navbar
+                else if (scrollTop < lastScrollTop) {
+                    navbar.classList.add('visible');
+                    navbar.classList.remove('hidden');
+                }
+            }
+            
+            lastScrollTop = scrollTop;
         });
 
         // Smooth scroll for navigation links
