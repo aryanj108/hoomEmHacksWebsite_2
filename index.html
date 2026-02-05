@@ -24,8 +24,7 @@
             background: transparent;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
-            padding-right: 10%;
+            justify-content: center;
             position: relative;
             z-index: 10;
         }
@@ -487,7 +486,7 @@
             max-width: 600px;
             width: 45vw;
             min-width: 350px;
-            margin: 0 0 0 auto;
+            margin: 0 auto;
             z-index: 2;
             border-radius: 20px;
             overflow: hidden;
@@ -1018,6 +1017,7 @@
             padding: 80px 0px 80px 150px;
             max-width: 1200px;
             margin: 0 auto 0 0; 
+            position: relative;
         }
 
         #about h2 {
@@ -1036,7 +1036,7 @@
             backdrop-filter: blur(12px);
             border-radius: 10px;
             padding: 40px;
-            width: 100%;
+            width: 80%;
             max-width: 1000px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
@@ -1141,6 +1141,106 @@
             line-height: 1.6;
             font-family: 'Courier New', monospace;
         }
+
+        /* Individual jellyfish with different positions, sizes, and rotations */
+        .jellyfish-1 {
+            right: -50px;
+            top: 100px;
+            width: 200px;
+            transform: rotate(15deg);
+            transform: scale(3.9);
+            animation: jellyfishFloat1 7s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        .jellyfish-2 {
+            right: 80px;
+            top: 350px;
+            width: 150px;
+            transform: rotate(-20deg);
+            transform: scale(1.9);
+            animation: jellyfishFloat2 9s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        .jellyfish-3 {
+            right: -30px;
+            top: 580px;
+            width: 180px;
+            transform: rotate(35deg);
+            transform: scale(4.9);
+            animation: jellyfishFloat3 8s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        .jellyfish-4 {
+            right: 120px;  
+            top: 200px;
+            width: 160px;
+            transform: rotate(-25deg);  
+            transform: scale(2.3);
+            animation: jellyfishFloat4 10s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes jellyfishFloat1 {
+            0%, 100% {
+                transform: rotate(10deg) translateY(0px); 
+            }
+            50% {
+                transform: rotate(10deg) translateY(-32px); 
+            }
+        }
+
+        @keyframes jellyfishFloat2 {
+            0%, 100% {
+                transform: rotate(-25deg) translateY(0px);  
+            }
+            50% {
+                transform: rotate(-25deg) translateY(-28px); 
+            }
+        }
+
+        @keyframes jellyfishFloat3 {
+            0%, 100% {
+                transform: rotate(10deg) translateY(0px); 
+            }
+            50% {
+                transform: rotate(10deg) translateY(-32px); 
+            }
+        }
+
+        @keyframes jellyfishFloat4 {
+            0%, 100% {
+                transform: rotate(-25deg) translateY(0px);  
+            }
+            50% {
+                transform: rotate(-25deg) translateY(-28px); 
+            }
+        }
+
+        @keyframes jellyfishFloat5 {
+            0%, 100% {
+                transform: rotate(10deg) translateY(0px); 
+            }
+            50% {
+                transform: rotate(10deg) translateY(-32px); 
+            }
+        }
+
+        @media (max-width: 768px) {
+            .jellyfish-1, .jellyfish-2, .jellyfish-3, .jellyfish-4 {
+                right: -80px;
+                opacity: 0.6;
+            }
+        }
+
+        .jellyfish-decoration {
+            position: absolute;
+            pointer-events: none;
+            z-index: 1;
+            right: -200px;
+        }
     </style>
 </head>
 <body>
@@ -1193,12 +1293,12 @@
         <section class="hero-section">
             <!-- UT Tower on the left -->
             <div class="hero-tower">
-                <img src="../assets/ut_tower_underwater.svg" alt="UT Tower">
+                <!--<img src="../assets/ut_tower_underwater.svg" alt="UT Tower">-->
             </div>
             
             <!-- Banner in the center-right (floating) -->
             <div class="hero-banner">
-                <img src="../assets/title.svg" alt="Hook 'em Hacks Banner">
+                <!--<img src="../assets/title.svg" alt="Hook 'em Hacks Banner">-->
             </div>
         </section>
 
@@ -1222,12 +1322,19 @@
                     meet other builders, and make something cool in a short amount of time.
                 </p>
             </div>
-        </section>
-
-        <!-- Full-width About Image Placeholder -->
-        <section class="about-image-section">
-            <div class="about-image-container">
-                <img src="../assets/about_section_placeholder.png" alt="About Hook 'em Hacks">
+        
+        <!-- Floating Jellyfish Decorations -->
+            <div class="jellyfish-decoration jellyfish-1">
+                <img src="../assets/about_info_1.svg" alt="Jellyfish">
+            </div>
+            <div class="jellyfish-decoration jellyfish-2">
+                <img src="../assets/about_info_2.svg" alt="Jellyfish">
+            </div>
+            <div class="jellyfish-decoration jellyfish-3">
+                <img src="../assets/about_info_3.svg" alt="Jellyfish">
+            </div>
+            <div class="jellyfish-decoration jellyfish-4">
+                <img src="../assets/about_info_4.svg" alt="Jellyfish">
             </div>
         </section>
 
