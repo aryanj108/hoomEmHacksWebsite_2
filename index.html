@@ -1008,6 +1008,63 @@
                 left: -120px;
             }
         }
+
+        .tracks-heading {
+            text-align: center;
+            color: #f8e71c; /* Yellowish-gold from the image */
+            font-family: 'Courier New', monospace;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        /* Grid Layout */
+        .tracks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Individual Cards */
+        .track-card {
+            background: rgba(255, 255, 255, 0.05); 
+            
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px); 
+            
+            border-radius: 15px;
+            padding: 40px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .track-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            
+            /*
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); */
+            z-index: 10;
+        }
+
+        /* Text Styling */
+        .track-card h3 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .track-card p {
+            color: #e0e0e0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            font-family: 'Courier New', monospace;
+        }
     </style>
 </head>
 <body>
@@ -1102,11 +1159,34 @@
         </section>
 
         <section id="tracks" class="section">
-            <h2>Tracks</h2>
-            <p>Fintech</p>
-            <p>AI</p>
-            <p>Hardware</p>
-            <p>Mobile Dev</p>
+            <h2 class="tracks-heading">TRACKS</h2>
+            
+            <div class="tracks-grid">
+                <div class="track-card">
+                    <h3>###</h3>
+                    <p>The main track judged on technical skill, design, creativity, impact, and theme.</p>
+                </div>
+                <div class="track-card">
+                    <h3>###</h3>
+                    <p>The main track judged on technical skill, design, creativity, impact, and theme.</p>
+                </div>
+                <div class="track-card">
+                    <h3>###</h3>
+                    <p>The main track judged on technical skill, design, creativity, impact, and theme.</p>
+                </div>
+                <div class="track-card">
+                    <h3>###</h3>
+                    <p>The main track judged on technical skill, design, creativity, impact, and theme.</p>
+                </div>
+                <div class="track-card">
+                    <h3>###</h3>
+                    <p>The main track judged on technical skill, design, creativity, impact, and theme.</p>
+                </div>
+                <div class="track-card">
+                    <h3>###</h3>
+                    <p>The main track judged on technical skill, design, creativity, impact, and theme.</p>
+                </div>                
+            </div>
         </section>
 
         <!-- Full-width Tracks Image Placeholder -->
