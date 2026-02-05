@@ -1241,6 +1241,38 @@
             z-index: 1;
             right: -200px;
         }
+
+        #tracks {
+            position: relative;  /* ADD THIS */
+        }
+
+        .tracks-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 1200px;
+            opacity: 1; 
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .tracks-background img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .tracks-heading {
+            position: relative;
+            z-index: 1;  /* ADD THIS */
+        }
+
+        .tracks-grid {
+            position: relative;
+            z-index: 1;  /* ADD THIS */
+        }
     </style>
 </head>
 <body>
@@ -1341,6 +1373,11 @@
         <section id="tracks" class="section">
             <h2 class="tracks-heading">TRACKS</h2>
             
+            <!-- Background Image -->
+            <div class="tracks-background">
+                <img src="../assets/underwater_bevo.svg" alt="Tracks Background">
+            </div>
+
             <div class="tracks-grid">
                 <div class="track-card">
                     <h3>###</h3>
@@ -1371,9 +1408,9 @@
 
         <!-- Full-width Tracks Image Placeholder -->
         <section class="tracks-image-section">
-            <div class="tracks-image-container">
+            <!--<div class="tracks-image-container">
                 <img src="../assets/tracks_bevo_placeholder.png" alt="Tracks for Hook 'em Hacks">
-            </div>
+            </div>-->
         </section>
 
         <section id="schedule" class="section">
@@ -1661,7 +1698,7 @@ window.addEventListener("scroll", () => {
                 oceanBubblesEl.style.transform = `translateY(${scrolled * 0.7}px)`;
             }
         });
-        
+
         window.addEventListener('scroll', () => {
             const scrollTop = window.scrollY;
             
