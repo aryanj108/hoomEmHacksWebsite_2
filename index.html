@@ -15,7 +15,7 @@
         body {
             font-family: 'Courier New', monospace;
             overflow-x: hidden;
-            background: #99ccee; /* Match the ocean gradient background */
+            background: #99ccee;
         }
 
         /* Landing Section */
@@ -78,7 +78,7 @@
             min-height: 100%;
             object-fit: cover;
             object-position: center;
-            filter: brightness(0.85) contrast(1.15);  /* Slightly darker, more contrast */
+            filter: brightness(0.85) contrast(1.15);
         }
 
         /* Parallax Ocean Background */
@@ -108,7 +108,7 @@
 
     .layer-deep-ocean {
         background: linear-gradient(180deg, 
-            #99ccee 0%,   /* light blue instead of dark navy */
+            #99ccee 0%,
             #88bfe0 10%, 
             #77b3d6 20%, 
             #66a7cc 30%, 
@@ -275,126 +275,6 @@
         .sponsor-card:hover {
             transform: translateY(-5px);
         }
-
-        /*#faq {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; 
-            padding: 80px 0px 80px 150px; 
-            max-width: 1200px;
-            margin: 0 auto 0 0; 
-        }
-
-        #faq h2 {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 36px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            color: #ffffff;
-            margin-bottom: 20px;
-            font-weight: 900;
-            padding-left: 10px; 
-        }
-
-        .faq-accordion {
-            width: 100%;
-            max-width: 1000px; 
-            margin-left: 0; 
-            background: rgb(1, 56, 112); 
-            backdrop-filter: blur(12px);
-            border-radius: 20px; 
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .faq-item {
-            background: transparent; 
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .faq-item:hover {
-            background: rgba(255, 255, 255, 0.05); 
-        }
-
-        .faq-item h3 {
-            font-family: 'Courier New', monospace; 
-            font-size: 17px; 
-            color: #e0e0e0;
-            margin-bottom: 0; 
-        }
-
-        .faq-answer p {
-            font-size: 16px;
-            color: #cccccc;
-            padding-bottom: 20px; 
-        }
-
-        .faq-item:last-child {
-            border-bottom: none; 
-        }
-
-        .faq-question {
-            display: flex;
-            align-items: center;
-            padding: 25px 30px;
-            cursor: pointer;
-            gap: 15px;
-            user-select: none;
-        }
-
-        .faq-icon {
-            font-size: 24px;
-            flex-shrink: 0;
-        }
-
-        .faq-item h3 {
-            color: #ffffff;
-            margin: 0;
-            flex: 1;
-            font-size: 20px;
-            font-weight: 500;
-        }
-
-        .faq-toggle {
-            font-size: 14px;
-            color: #ffffff;
-            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            flex-shrink: 0;
-        }
-
-        .faq-item.active .faq-toggle {
-            transform: rotate(180deg);
-        }
-
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease, padding 0.3s ease;
-            padding: 0 30px 0 69px;
-            opacity: 1;
-        }
-
-        .faq-item.active .faq-answer {
-            max-height: 500px;
-            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
-                            padding 0.5s cubic-bezier(0.4, 0, 0.2, 1),
-                            opacity 0.5s ease; 
-                padding: 0 30px 0 69px;
-                opacity: 1;
-        }
-
-        .faq-answer p {
-            color: #ffffff;
-            line-height: 1.8;
-            margin: 0;
-        }
-
-        .faq-item h3 {
-            color: #ffffff;
-            margin-bottom: 10px;
-        }*/
         
         #faq {
             display: flex;
@@ -437,19 +317,19 @@
             overflow: visible;
             display: flex;
             flex-direction: column;
-            gap: 15px;  /* Space between items */
+            gap: 15px;
         }
 
         .faq-item {
-            background: #a8c5ff;  /* Light blue background */
-            border: 3px solid #1a1a4d;  /* Dark blue border */
+            background: #a8c5ff;
+            border: 3px solid #1a1a4d;
             border-radius: 15px;
             transition: all 0.3s ease;
             overflow: hidden;
         }
 
         .faq-item.active {
-            background: #fff9c4;  /* Yellow background when open */
+            background: #fff9c4;
         }
 
         .faq-item:hover {
@@ -472,7 +352,7 @@
         .faq-item h3 {
             font-family: 'Courier New', monospace;
             font-size: 16px;
-            color: #1a1a4d;  /* Dark blue text */
+            color: #1a1a4d;
             margin: 0;
             flex: 1;
             font-weight: 700;
@@ -482,7 +362,7 @@
 
         .faq-toggle {
             font-size: 18px;
-            color: #1a1a4d;  /* Dark blue arrow */
+            color: #1a1a4d;
             transition: transform 0.3s ease;
             flex-shrink: 0;
             font-weight: bold;
@@ -587,9 +467,7 @@
             z-index: 1;
             border-radius: 20px;
             overflow: hidden;
-            margin-bottom: 100px;  /* Added this line */
-            /*box-shadow: 0 20px 60px rgba(0, 217, 255, 0.3);
-            border: 3px solid rgba(0, 217, 255, 0.3);*/
+            margin-bottom: 100px;
         }
 
         .tower-section {
@@ -655,9 +533,6 @@
             z-index: 2;
             border-radius: 20px;
             overflow: hidden;
-            /*
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-            border: 3px solid rgba(255, 255, 255, 0.2);*/
             animation: float 6s ease-in-out infinite;
         }
 
@@ -676,9 +551,6 @@
             z-index: 2;
             border-radius: 20px;
             overflow: hidden;
-            /*
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-            border: 3px solid rgba(255, 255, 255, 0.2);*/
             animation: float 6s ease-in-out infinite;
         }
 
@@ -794,35 +666,30 @@
             position: fixed;
             right: 20px;
             top: 0;
-            width: 60px;       /* total width including thumb space */
+            width: 60px;
             height: 100vh;
             z-index: 998;
-            pointer-events: none; /* only thumb is clickable */
+            pointer-events: none;
         }
 
         /* Scrollbar Track */
         .custom-scrollbar-track {
             position: absolute;
-            right: 20px;      /* distance from page edge */
+            right: 20px;
             top: 0;
-            width: 12px;      /* track width */
-            height: 100%;      /* track height */
+            width: 12px;
+            height: 100%;
             background: rgba(255, 255, 255, 0.4);
         }
 
         /* Scrollbar Thumb (icon) */
         .custom-scrollbar-thumb {
             position: absolute;
-            /* Center horizontally on track */
             left: 50%;
-            transform: translate(-50%, 0); /* horizontal centering */
-            
-            /* Vertical positioning will be dynamic based on scroll */
-            top: 50%; /* for example, static center, or update via JS */
-            
-            width: 120px;  /* thumb width */
-            height: 120px; /* thumb height */
-            
+            transform: translate(-50%, 0);
+            top: 50%;
+            width: 120px;
+            height: 120px;
             cursor: pointer;
             pointer-events: auto;
             transition: transform 0.15s ease;
@@ -839,20 +706,6 @@
         .custom-scrollbar-thumb:hover {
             transform: translate(-50%, 0) scale(1.3);
         }
-
-
-        /* Progress Indicator Line
-        .scroll-progress {
-            position: absolute;
-            right: 20px;
-            top: 10%;
-            width: 12px;
-            height: 0%;
-            border-radius: 6px;
-            background: #00d9ff;
-            transition: height 0.1s ease;
-        }*/
-
 
         .about-image-section {
             width: 100%;
@@ -1050,90 +903,73 @@
 
         /* Footer Styles */
         .footer {
-            background: rgba(0, 26, 51, 0.8);
-            backdrop-filter: blur(10px);
-            border-top: 2px solid #00d9ff;
-            padding: 60px 50px;
             position: relative;
             z-index: 20;
-            color: #ffffff;
+            width: 100%;
+            overflow: hidden;
         }
 
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            flex-wrap: wrap;
-            gap: 30px;
+        .footer-campus-container {
+            position: relative;
+            width: 100%;
+            min-height: 400px;
         }
 
-        .footer-left {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+        .footer-campus-img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
-        .footer-logo-img {
-            height: 60px;
-            width: auto;
-            margin-bottom: 10px;
-            filter: drop-shadow(0 0 5px #00d9ff);
+        .footer-overlay-content {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+            padding: 0 20px;
         }
 
         .footer-made-with {
+            color: #ffffff;
             font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer-copyright {
+            color: #ffffff;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         .footer-links {
-            list-style: none;
-            font-size: 14px;
-            line-height: 2;
-            color: #5ac8e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
         .footer-links a {
-            color: inherit;
+            color: #ffffff;
             text-decoration: none;
+            font-size: 14px;
             transition: color 0.3s;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         .footer-links a:hover {
+            color: #5ac8e8;
+        }
+
+        .footer-dot {
             color: #ffffff;
-        }
-
-        .footer-right {
-            text-align: right;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 15px;
-        }
-
-        .contact-us-text {
-            font-size: 16px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 20px;
-        }
-
-        .social-icons svg {
-            fill: #00d9ff;
-            width: 24px;
-            height: 24px;
-            transition: transform 0.3s, fill 0.3s;
-        }
-
-        .social-icons a:hover svg {
-            transform: translateY(-3px);
-            fill: #ffffff;
+            font-size: 14px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
 
         @media (max-width: 768px) {
@@ -1174,6 +1010,16 @@
             
             .team-info .team-members {
                 font-size: 14px;
+            }
+
+            .footer-made-with {
+                font-size: 16px;
+            }
+
+            .footer-copyright,
+            .footer-links a,
+            .footer-dot {
+                font-size: 12px;
             }
         }
 
@@ -1273,7 +1119,7 @@
 
         .tracks-heading {
             text-align: center;
-            color: #f8e71c; /* Yellowish-gold from the image */
+            color: #f8e71c;
             font-family: 'Courier New', monospace;
             font-size: 3rem;
             margin-bottom: 50px;
@@ -1293,10 +1139,8 @@
         /* Individual Cards */
         .track-card {
             background: rgba(63, 63, 63, 0.2); 
-            
             backdrop-filter: blur(12px); 
             -webkit-backdrop-filter: blur(12px); 
-            
             border-radius: 15px;
             padding: 40px 20px;
             text-align: center;
@@ -1305,11 +1149,6 @@
 
         .track-card:hover {
             transform: translateY(-10px) scale(1.05);
-            
-            /*
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); */
             z-index: 10;
         }
 
@@ -1468,7 +1307,7 @@
         }
 
         .faq-side img {
-            width: 1000px;      /* adjust as needed */
+            width: 1000px;
             height: auto;
         }
 
@@ -1476,11 +1315,11 @@
             #faq {
                 flex-direction: column;
                 align-items: center;
-                padding: 80px 50px;  /* Reset padding for mobile */
+                padding: 80px 50px;
             }
             
             .faq-side img {
-                width: 350px;  /* Adjusted for mobile */
+                width: 350px;
             }
         }
 
@@ -1495,12 +1334,13 @@
     </style>
 </head>
 <body>
-        <div class="ocean-background" id="oceanBackground">
+    <div class="ocean-background" id="oceanBackground">
         <div class="parallax-layer layer-deep-ocean"></div>
         <div class="parallax-layer layer-mid-ocean"></div>
         <div class="parallax-layer layer-shallow-ocean"></div>
         <div class="ocean-bubbles" id="oceanBubbles"></div>
     </div>
+    
     <!-- Custom Scrollbar -->
     <div class="custom-scrollbar">
         <div class="custom-scrollbar-track"></div>
@@ -1509,9 +1349,6 @@
             <img src="../assets/Untitled(16).svg" alt="Bevo">
         </div>
     </div>
-
-    <!-- Ocean Background for Main Content (Fixed with Parallax) -->
-
 
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
@@ -1528,34 +1365,26 @@
         </ul>
     </nav>
 
-    <!-- Landing Section - Now part of seamless scroll -->
+    <!-- Landing Section -->
     <section class="landing-section" id="landingSection">
         <div class="svg-background-overlay">
             <img src="../assets/background_2.svg" alt="Underwater Scene">
         </div>
-            <div class="intro-banner">
-                <img src="../assets/intro_banner.svg" alt="Hook 'em Hacks Banner">
-            </div>
+        <div class="intro-banner">
+            <img src="../assets/intro_banner.svg" alt="Hook 'em Hacks Banner">
+        </div>
     </section>
 
     <!-- Main Content -->
     <div class="main-content">
-        <!-- Hero Section with UT Tower and Banner -->
+        <!-- Hero Section -->
         <section class="hero-section">
-            <!-- UT Tower on the left -->
-            <div class="hero-tower">
-                <!--<img src="../assets/ut_tower_underwater.svg" alt="UT Tower">-->
-            </div>
-            
-            <!-- Banner in the center-right (floating) -->
-            <div class="hero-banner">
-                <!--<img src="../assets/title.svg" alt="Hook 'em Hacks Banner">-->
-            </div>
+            <div class="hero-tower"></div>
+            <div class="hero-banner"></div>
         </section>
 
         <section id="about" class="section">
             <h2>About</h2>
-
             <div class="about-card">
                 <p>
                     Hook 'em Hacks is UT Austin's <strong>premier student-run hackathon</strong>, happening this April. 
@@ -1574,7 +1403,7 @@
                 </p>
             </div>
         
-        <!-- Floating Jellyfish Decorations -->
+            <!-- Floating Jellyfish Decorations -->
             <div class="jellyfish-decoration jellyfish-1">
                 <img src="../assets/about_info_1.svg" alt="Jellyfish">
             </div>
@@ -1592,7 +1421,6 @@
         <section id="tracks" class="section">
             <h2 class="tracks-heading">TRACKS</h2>
             
-            <!-- Background Image -->
             <div class="tracks-background">
                 <img src="../assets/underwater_bevo.svg" alt="Tracks Background">
             </div>
@@ -1623,13 +1451,6 @@
                     <p>The main track judged on technical skill, design, creativity, impact, and theme.</p>
                 </div>                
             </div>
-        </section>
-
-        <!-- Full-width Tracks Image Placeholder -->
-        <section class="tracks-image-section">
-            <!--<div class="tracks-image-container">
-                <img src="../assets/tracks_bevo_placeholder.png" alt="Tracks for Hook 'em Hacks">
-            </div>-->
         </section>
 
         <section id="schedule" class="section">
@@ -1705,77 +1526,75 @@
         </section>
 
         <section id="faq" class="section">
-        <div class="faq-content-wrapper">
-            <h2>FAQs</h2>
-            
-            <div class="faq-accordion">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Who can attend?</h3>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Hook 'em Hacks is open to all current college students, regardless of major or experience level. High school students are welcome with parental consent.</p>
-                    </div>
-                </div>
+            <div class="faq-content-wrapper">
+                <h2>FAQs</h2>
                 
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How much does it cost?</h3>
-                        <span class="faq-toggle">▼</span>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Who can attend?</h3>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Hook 'em Hacks is open to all current college students, regardless of major or experience level. High school students are welcome with parental consent.</p>
+                        </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>Hook 'em Hacks is completely FREE! We'll provide meals, snacks, swag, and everything you need for an amazing weekend of hacking.</p>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How much does it cost?</h3>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Hook 'em Hacks is completely FREE! We'll provide meals, snacks, swag, and everything you need for an amazing weekend of hacking.</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What should I bring?</h3>
-                        <span class="faq-toggle">▼</span>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What should I bring?</h3>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Bring your laptop, chargers, valid student ID, and enthusiasm! We recommend bringing a sleeping bag if you plan to rest during the event.</p>
+                        </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>Bring your laptop, chargers, valid student ID, and enthusiasm! We recommend bringing a sleeping bag if you plan to rest during the event.</p>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do I need a team?</h3>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Teams can have up to 4 people. You can come with a team or form one at the event during our team formation session. Solo hackers are also welcome!</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Do I need a team?</h3>
-                        <span class="faq-toggle">▼</span>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What can I build?</h3>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Anything! Web apps, mobile apps, hardware projects, games, AI/ML projects—if you can code it, you can build it. We'll have various tracks and prizes.</p>
+                        </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>Teams can have up to 4 people. You can come with a team or form one at the event during our team formation session. Solo hackers are also welcome!</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What can I build?</h3>
-                        <span class="faq-toggle">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Anything! Web apps, mobile apps, hardware projects, games, AI/ML projects—if you can code it, you can build it. We'll have various tracks and prizes.</p>
-                    </div>
-                </div>
 
-                <div class="faq-contact">
-                    Have more questions? We're here for you! Send us an email at 
-                    <a href="mailto:hello@hookemhacks.com">hello@hookemhacks.com</a>, or reach out to us on 
-                    <a href="#">Instagram</a> or <a href="#">LinkedIn</a>!
+                    <div class="faq-contact">
+                        Have more questions? We're here for you! Send us an email at 
+                        <a href="mailto:hello@hookemhacks.com">hello@hookemhacks.com</a>, or reach out to us on 
+                        <a href="#">Instagram</a> or <a href="#">LinkedIn</a>!
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="faq-side">
-            <img src="../assets/dkr_underwater.svg" alt="FAQ graphic">
-        </div>
-    </section>
-
+            <div class="faq-side">
+                <img src="../assets/dkr_underwater.svg" alt="FAQ graphic">
+            </div>
+        </section>
 
         <section id="sponsors" class="section">
             <div class="sponsors-with-tower">
-                <!-- UT Tower on the left -->
                 <div class="hero-tower">
                     <img src="../assets/ut_tower_underwater.svg" alt="UT Tower">
                 </div>
@@ -1810,10 +1629,8 @@
             <h2>Meet the Team</h2>
             
             <div class="team-carousel-container">
-                <!-- Left Arrow -->
                 <div class="team-nav-arrow left" onclick="changeTeam(-1)"></div>
                 
-                <!-- Team Display -->
                 <div class="team-display">
                     <div class="team-photo-container">
                         <img id="teamPhoto" src="../assets/team/design_team.jpg" alt="Design Team">
@@ -1825,33 +1642,25 @@
                     </div>
                 </div>
                 
-                <!-- Right Arrow -->
                 <div class="team-nav-arrow right" onclick="changeTeam(1)"></div>
             </div>
             
-            <!-- Carousel Indicators -->
             <div class="team-indicators" id="teamIndicators"></div>
         </section>
     </div>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-left">
-                <img src="../assets/scroll_asset.jpg" alt="Hook 'em Hacks Logo" class="footer-logo-img">
-                <p class="footer-made-with">Made with 💙 by Hook 'em Hacks Team</p>
-                <ul class="footer-links">
-                    <li>Registered Student Organization of UT Austin</li>
-                    <li>Equal Education and Employment</li>
-                    <li><a href="https://mlh.io/code-of-conduct" target="_blank">MLH Code of Conduct</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-right">
-                <p class="contact-us-text">Contact Us!</p>
-                <div class="social-icons">
-                    <a href="#"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-                    <a href="#"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-                    <a href="mailto:hello@hookemhacks.com"><svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099l3.83-3.104 5.612 8.818h-18.893l5.627-8.813zm9.201-1.259l4.623-3.746v9.458l-4.623-5.712z"/></svg></a>
+        <div class="footer-campus-container">
+            <img src="../assets/ut_campus.svg" alt="UT Campus" class="footer-campus-img">
+            <div class="footer-overlay-content">
+                <p class="footer-made-with">Made with love by the Hook 'Em Hacks Team!</p>
+                <p class="footer-copyright">© 2026 Hook 'Em Hacks. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">LinkedIn</a>
+                    <span class="footer-dot">•</span>
+                    <a href="#">Instagram</a>
+                    <span class="footer-dot">•</span>
+                    <a href="https://mlh.io/code-of-conduct" target="_blank">Code of Conduct</a>
                 </div>
             </div>
         </div>
@@ -1859,18 +1668,17 @@
 
     <script>
         window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
+            window.scrollTo(0, 0);
         };
         
-        // Also ensure we're at top when page loads
         if (history.scrollRestoration) {
             history.scrollRestoration = 'manual';
         }
         window.scrollTo(0, 0);
+        
         const navbar = document.getElementById('navbar');
         const oceanBackground = document.getElementById('oceanBackground');
 
-        // Create bubbles for ocean background
         function createOceanBubble() {
             const bubble = document.createElement('div');
             bubble.className = 'bubble';
@@ -1890,181 +1698,81 @@
         setInterval(createOceanBubble, 1000);
         for (let i = 0; i < 10; i++) createOceanBubble();
 
-        // Scroll direction detection for navbar
         let lastScrollTop = 0;
-        let scrollThreshold = window.innerHeight; // Show navbar after scrolling past landing section
+        let scrollThreshold = window.innerHeight;
         let isScrollingFromClick = false;
         const thumb = document.getElementById("scrollThumb");
         const TOP_PADDING = 30;
         const BOTTOM_PADDING = 30;
         const VISUAL_END_BUFFER = 30;
 
-window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = scrollTop / maxScroll;
+            const viewportHeight = window.innerHeight;
+            const thumbHeight = thumb.offsetHeight;
+            const minY = 0;
+            const maxY = viewportHeight - thumbHeight - VISUAL_END_BUFFER;
+            const y = progress * maxY;
+            thumb.style.top = `${y}px`;
+        });
 
-    const progress = scrollTop / maxScroll;
-
-    const viewportHeight = window.innerHeight;
-    const thumbHeight = thumb.offsetHeight;
-
-    // 🔒 visual range only
-    const minY = 0;
-    const maxY = viewportHeight - thumbHeight - VISUAL_END_BUFFER;
-
-    const y = progress * maxY;
-
-    thumb.style.top = `${y}px`;
-});
-
-        // Parallax scrolling effect for ocean layers
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
-            
             const deepOcean = document.querySelector('.layer-deep-ocean');
             const midOcean = document.querySelector('.layer-mid-ocean');
             const shallowOcean = document.querySelector('.layer-shallow-ocean');
             const oceanBubblesEl = document.querySelector('.ocean-bubbles');
             
-            if (deepOcean) {
-                deepOcean.style.transform = `translateY(${scrolled * 0.2}px)`;
-            }
-            if (midOcean) {
-                midOcean.style.transform = `translateY(${scrolled * 0.4}px)`;
-            }
-            if (shallowOcean) {
-                shallowOcean.style.transform = `translateY(${scrolled * 0.6}px)`;
-            }
-            if (oceanBubblesEl) {
-                oceanBubblesEl.style.transform = `translateY(${scrolled * 0.7}px)`;
-            }
+            if (deepOcean) deepOcean.style.transform = `translateY(${scrolled * 0.2}px)`;
+            if (midOcean) midOcean.style.transform = `translateY(${scrolled * 0.4}px)`;
+            if (shallowOcean) shallowOcean.style.transform = `translateY(${scrolled * 0.6}px)`;
+            if (oceanBubblesEl) oceanBubblesEl.style.transform = `translateY(${scrolled * 0.7}px)`;
         });
 
         window.addEventListener('scroll', () => {
             const scrollTop = window.scrollY;
-            
             if (!isScrollingFromClick) {
-                // Scrolling down - hide navbar
                 if (scrollTop > lastScrollTop) {
                     navbar.classList.add('hidden');
                     navbar.classList.remove('visible');
-                } 
-                // Scrolling up - show navbar
-                else if (scrollTop < lastScrollTop) {
+                } else if (scrollTop < lastScrollTop) {
                     navbar.classList.add('visible');
                     navbar.classList.remove('hidden');
                 }
             }
-            
             lastScrollTop = scrollTop;
         });
 
-        // Smooth scroll for navigation links
         document.querySelectorAll('.navbar-links a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetSection = document.querySelector(targetId);
-                
                 isScrollingFromClick = true;
                 navbar.classList.remove('hidden');
                 navbar.classList.add('visible');
-                
                 targetSection.scrollIntoView({ behavior: 'smooth' });
-                
                 setTimeout(() => {
                     isScrollingFromClick = false;
                 }, 1000);
             });
         });
 
-        // FAQ Accordion functionality
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const faqItem = question.parentElement;
                 const isActive = faqItem.classList.contains('active');
-                
                 document.querySelectorAll('.faq-item').forEach(item => {
                     item.classList.remove('active');
                 });
-                
                 if (!isActive) {
                     faqItem.classList.add('active');
                 }
             });
         });
 
-        // Custom Scrollbar
-        const scrollThumb = document.getElementById('scrollThumb');
-        const scrollProgress = document.querySelector('.scroll-progress');
-        let isDragging = false;
-        let startY = 0;
-        let startScrollTop = 0;
-
-        function updateScrollThumb() {
-            const windowHeight = window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight;
-            const scrollTop = window.pageYOffset;
-            
-            const scrollPercentage = scrollTop / (documentHeight - windowHeight);
-            const trackHeight = windowHeight * 0.8;
-            const thumbTop = (windowHeight * 0.1) + (scrollPercentage * trackHeight);
-            
-            if (!isDragging) {
-                scrollThumb.style.top = thumbTop + 'px';
-            }
-            
-            scrollProgress.style.height = (scrollPercentage * 80) + '%';
-        }
-
-        scrollThumb.addEventListener('mousedown', (e) => {
-            isDragging = true;
-            startY = e.clientY;
-            startScrollTop = window.pageYOffset;
-            document.body.style.userSelect = 'none';
-            scrollThumb.style.cursor = 'grabbing';
-            e.preventDefault();
-        });
-
-        document.addEventListener('mousemove', (e) => {
-            if (!isDragging) return;
-            
-            const windowHeight = window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight;
-            const maxScroll = documentHeight - windowHeight;
-            const deltaY = e.clientY - startY;
-            const trackHeight = windowHeight * 0.8;
-            const scrollDelta = (deltaY / trackHeight) * maxScroll;
-            const newScrollTop = Math.max(0, Math.min(maxScroll, startScrollTop + scrollDelta));
-            
-            const scrollPercentage = newScrollTop / maxScroll;
-            const thumbTop = (windowHeight * 0.1) + (scrollPercentage * trackHeight);
-            scrollThumb.style.top = thumbTop + 'px';
-            
-            window.scrollTo({ top: newScrollTop, behavior: 'auto' });
-            e.preventDefault();
-        });
-
-        document.addEventListener('mouseup', () => {
-            if (isDragging) {
-                isDragging = false;
-                document.body.style.userSelect = '';
-                scrollThumb.style.cursor = 'pointer';
-            }
-        });
-
-        document.addEventListener('mouseleave', () => {
-            if (isDragging) {
-                isDragging = false;
-                document.body.style.userSelect = '';
-                scrollThumb.style.cursor = 'pointer';
-            }
-        });
-
-        window.addEventListener('scroll', updateScrollThumb);
-        updateScrollThumb();
-
-        // Team Carousel
         const teams = [
             {
                 name: "DESIGN TEAM",
@@ -2111,13 +1819,11 @@ window.addEventListener("scroll", () => {
 
         function changeTeam(direction) {
             currentTeamIndex += direction;
-            
             if (currentTeamIndex < 0) {
                 currentTeamIndex = teams.length - 1;
             } else if (currentTeamIndex >= teams.length) {
                 currentTeamIndex = 0;
             }
-            
             updateTeamDisplay();
         }
 
@@ -2129,7 +1835,6 @@ window.addEventListener("scroll", () => {
         function updateIndicators() {
             const indicatorsContainer = document.getElementById('teamIndicators');
             indicatorsContainer.innerHTML = '';
-            
             teams.forEach((team, index) => {
                 const dot = document.createElement('div');
                 dot.className = 'indicator-dot' + (index === currentTeamIndex ? ' active' : '');
@@ -2142,9 +1847,9 @@ window.addEventListener("scroll", () => {
         updateTeamDisplay();
 
         document.getElementById('logoLink').addEventListener('click', (e) => {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     </script>
 </body>
 </html>
