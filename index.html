@@ -396,22 +396,22 @@
             margin-bottom: 10px;
         }*/
         
-
         #faq {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
-            padding: 80px 20px 80px 100px;  /* Changed: more left padding, less right */
-            max-width: 1400px;  /* Increased max-width */
-            margin: 0 auto;
-            gap: 60px;  /* Increased gap */
+            padding: 80px 20px 80px 50px;  
+            max-width: none;  
+            width: 100%;  
+            margin: 0;  
+            gap: 60px;
         }
 
         .faq-content-wrapper {
-            flex: 1;
+            flex: 0 0 600px;  
             max-width: 600px;
-            margin-right: auto;
+            margin-left: 0;  
         }
 
         #faq h2 {
@@ -422,14 +422,14 @@
             color: #ffffff;
             margin-bottom: 40px;
             font-weight: 900;
-            padding-left: 0;  /* Remove left padding */
+            padding-left: 0;  
             text-align: center;
         }
 
         .faq-accordion {
             width: 100%;
             max-width: 600px;
-            background: transparent;  /* Remove background */
+            background: transparent;  
             backdrop-filter: none;
             border-radius: 0;
             border: none;
@@ -505,14 +505,13 @@
         }
 
         .faq-answer p {
-            color: #1a1a4d;  /* Dark blue text */
+            color: #1a1a4d;  
             font-size: 15px;
             line-height: 1.6;
             margin: 0;
             font-family: 'Courier New', monospace;
         }
 
-        /* Contact note at bottom */
         .faq-contact {
             background: #d4e3ff;
             border: 3px solid #1a1a4d;
@@ -526,7 +525,7 @@
         }
 
         .faq-contact a {
-            color: #ff1493;  /* Pink links */
+            color: #490228;  
             text-decoration: none;
             font-weight: bold;
         }
@@ -580,7 +579,7 @@
         }
 
         .hero-tower {
-            position: absolute;
+            position: relative;  
             left: 0;
             max-width: 450px;
             width: 30vw;
@@ -588,8 +587,18 @@
             z-index: 1;
             border-radius: 20px;
             overflow: hidden;
+            margin-bottom: 100px;  /* Added this line */
             /*box-shadow: 0 20px 60px rgba(0, 217, 255, 0.3);
             border: 3px solid rgba(0, 217, 255, 0.3);*/
+        }
+
+        .tower-section {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding: 50px;
+            position: relative;
+            z-index: 10;
         }
 
         .hero-tower img {
@@ -599,6 +608,44 @@
             object-fit: contain 
         }
 
+        .sponsors-with-tower {
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+            position: relative;
+        }
+
+        .sponsors-content {
+            flex: 1;
+        }
+
+        .hero-tower {
+            position: sticky;
+            top: 100px;
+            left: 0;
+            max-width: 450px;
+            width: 30vw;
+            min-width: 280px;
+            z-index: 1;
+            border-radius: 20px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 968px) {
+            .sponsors-with-tower {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-tower {
+                position: relative;
+                top: 0;
+                margin-bottom: 30px;
+            }
+        }
+        
         .hero-banner {
             position: relative;
             max-width: 600px;
@@ -1382,7 +1429,7 @@
         }
 
         #tracks {
-            position: relative;  /* ADD THIS */
+            position: relative;  
         }
 
         .tracks-background {
@@ -1405,12 +1452,12 @@
 
         .tracks-heading {
             position: relative;
-            z-index: 1;  /* ADD THIS */
+            z-index: 1; 
         }
 
         .tracks-grid {
             position: relative;
-            z-index: 1;  /* ADD THIS */
+            z-index: 1;  
         }
 
         .faq-side {
@@ -1421,7 +1468,7 @@
         }
 
         .faq-side img {
-            width: 500px;      /* adjust as needed */
+            width: 1000px;      /* adjust as needed */
             height: auto;
         }
 
@@ -1726,31 +1773,35 @@
     </section>
 
 
-        <!-- UT Tower on the left -->
-            <div class="hero-tower">
-                <img src="../assets/ut_tower_underwater.svg" alt="UT Tower">
-            </div>
-
         <section id="sponsors" class="section">
-            <h2>Our Sponsors</h2>
-            <p>Hook 'em Hacks wouldn't be possible without the generous support of our sponsors. Interested in sponsoring? Contact us at sponsors@hookemhacks.com</p>
-            
-            <div class="sponsor-grid">
-                <div class="sponsor-card">
-                    <h3>Platinum Tier</h3>
-                    <p>Your Company Here</p>
+            <div class="sponsors-with-tower">
+                <!-- UT Tower on the left -->
+                <div class="hero-tower">
+                    <img src="../assets/ut_tower_underwater.svg" alt="UT Tower">
                 </div>
-                <div class="sponsor-card">
-                    <h3>Gold Tier</h3>
-                    <p>Your Company Here</p>
-                </div>
-                <div class="sponsor-card">
-                    <h3>Silver Tier</h3>
-                    <p>Your Company Here</p>
-                </div>
-                <div class="sponsor-card">
-                    <h3>Bronze Tier</h3>
-                    <p>Your Company Here</p>
+                
+                <div class="sponsors-content">
+                    <h2>Our Sponsors</h2>
+                    <p>Hook 'em Hacks wouldn't be possible without the generous support of our sponsors. Interested in sponsoring? Contact us at sponsors@hookemhacks.com</p>
+                    
+                    <div class="sponsor-grid">
+                        <div class="sponsor-card">
+                            <h3>Platinum Tier</h3>
+                            <p>Your Company Here</p>
+                        </div>
+                        <div class="sponsor-card">
+                            <h3>Gold Tier</h3>
+                            <p>Your Company Here</p>
+                        </div>
+                        <div class="sponsor-card">
+                            <h3>Silver Tier</h3>
+                            <p>Your Company Here</p>
+                        </div>
+                        <div class="sponsor-card">
+                            <h3>Bronze Tier</h3>
+                            <p>Your Company Here</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
