@@ -81,7 +81,7 @@
             filter: brightness(0.85) contrast(1.15);  /* Slightly darker, more contrast */
         }
 
-        /* Parallax Ocean Background - FIXED behind main content */
+        /* Parallax Ocean Background */
         .ocean-background {
             position: fixed;
             top: 0;
@@ -1404,6 +1404,15 @@
             position: relative;
             z-index: 1;  /* ADD THIS */
         }
+
+        .faq-side {
+            flex-shrink: 0;
+        }
+
+        .faq-side img {
+            width: 300px;      /* adjust as needed */
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -1676,7 +1685,17 @@
                     <a href="#">Instagram</a> or <a href="#">LinkedIn</a>!
                 </div>
             </div>
+
+                <div class="faq-side">
+                    <img src="../assets/dkr_underwater.svg" alt="FAQ graphic">
+                </div>
         </section>
+
+
+        <!-- UT Tower on the left -->
+            <div class="hero-tower">
+                <img src="../assets/ut_tower_underwater.svg" alt="UT Tower">
+            </div>
 
         <section id="sponsors" class="section">
             <h2>Our Sponsors</h2>
