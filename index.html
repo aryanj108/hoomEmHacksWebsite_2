@@ -687,7 +687,7 @@
             position: absolute;
             left: 50%;
             transform: translate(-50%, 0);
-            top: 50%;
+            top: 0%;
             width: 120px;
             height: 120px;
             cursor: pointer;
@@ -1883,6 +1883,16 @@
             });
         }
 
+        function updateBevoPosition() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = scrollTop / docHeight;
+            const scrollBarHeight = window.innerHeight - scrollThumb.offsetHeight;
+            scrollThumb.style.top = `${scrollPercent * scrollBarHeight}px`;
+        }
+
+        window.addEventListener('scroll', updateBevoPosition);
+        window.addEventListener('load', updateBevoPosition);
         updateIndicators();
         updateTeamDisplay();
 
