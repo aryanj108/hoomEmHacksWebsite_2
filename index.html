@@ -399,18 +399,19 @@
 
         #faq {
             display: flex;
-            flex-direction: row;  /* Changed from column */
+            flex-direction: row;
             align-items: flex-start;
-            justify-content: space-between;  /* Add spacing between content and image */
-            padding: 80px 50px;
-            max-width: 1200px;  /* Increased to accommodate both elements */
+            justify-content: space-between;
+            padding: 80px 20px 80px 100px;  /* Changed: more left padding, less right */
+            max-width: 1400px;  /* Increased max-width */
             margin: 0 auto;
-            gap: 40px;  /* Add gap between FAQ and image */
+            gap: 60px;  /* Increased gap */
         }
 
         .faq-content-wrapper {
             flex: 1;
             max-width: 600px;
+            margin-right: auto;
         }
 
         #faq h2 {
@@ -1416,10 +1417,11 @@
             flex-shrink: 0;
             display: flex;
             align-items: center;
+            animation: faqGraphicFloat 6s ease-in-out infinite;
         }
 
         .faq-side img {
-            width: 300px;      /* adjust as needed */
+            width: 500px;      /* adjust as needed */
             height: auto;
         }
 
@@ -1427,10 +1429,20 @@
             #faq {
                 flex-direction: column;
                 align-items: center;
+                padding: 80px 50px;  /* Reset padding for mobile */
             }
             
             .faq-side img {
-                width: 300px;
+                width: 350px;  /* Adjusted for mobile */
+            }
+        }
+
+        @keyframes faqGraphicFloat {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-30px);
             }
         }
     </style>
