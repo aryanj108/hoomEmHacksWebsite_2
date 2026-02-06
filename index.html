@@ -399,11 +399,18 @@
 
         #faq {
             display: flex;
-            flex-direction: column;
-            align-items: center;  /* Changed from flex-start to center */
-            padding: 80px 50px;  /* Changed padding */
-            max-width: 600px;  /* Narrower max-width */
-            margin: 0 auto 0 0;  /* Centered */
+            flex-direction: row;  /* Changed from column */
+            align-items: flex-start;
+            justify-content: space-between;  /* Add spacing between content and image */
+            padding: 80px 50px;
+            max-width: 1200px;  /* Increased to accommodate both elements */
+            margin: 0 auto;
+            gap: 40px;  /* Add gap between FAQ and image */
+        }
+
+        .faq-content-wrapper {
+            flex: 1;
+            max-width: 600px;
         }
 
         #faq h2 {
@@ -1407,11 +1414,24 @@
 
         .faq-side {
             flex-shrink: 0;
+            display: flex;
+            align-items: center;
         }
 
         .faq-side img {
             width: 300px;      /* adjust as needed */
             height: auto;
+        }
+
+        @media (max-width: 968px) {
+            #faq {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .faq-side img {
+                width: 300px;
+            }
         }
     </style>
 </head>
@@ -1626,6 +1646,7 @@
         </section>
 
         <section id="faq" class="section">
+        <div class="faq-content-wrapper">
             <h2>FAQs</h2>
             
             <div class="faq-accordion">
@@ -1685,11 +1706,12 @@
                     <a href="#">Instagram</a> or <a href="#">LinkedIn</a>!
                 </div>
             </div>
+        </div>
 
-                <div class="faq-side">
-                    <img src="../assets/dkr_underwater.svg" alt="FAQ graphic">
-                </div>
-        </section>
+        <div class="faq-side">
+            <img src="../assets/dkr_underwater.svg" alt="FAQ graphic">
+        </div>
+    </section>
 
 
         <!-- UT Tower on the left -->
