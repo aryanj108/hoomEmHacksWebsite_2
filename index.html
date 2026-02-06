@@ -276,11 +276,11 @@
             transform: translateY(-5px);
         }
 
-        #faq {
+        /*#faq {
             display: flex;
             flex-direction: column;
             align-items: flex-start; 
-            padding: 80px 0px 80px 150px; /* Exact same padding as #about */
+            padding: 80px 0px 80px 150px; 
             max-width: 1200px;
             margin: 0 auto 0 0; 
         }
@@ -309,26 +309,26 @@
         }
 
         .faq-item {
-            background: transparent; /* Remove the blue tint */
+            background: transparent; 
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
         }
 
         .faq-item:hover {
-            background: rgba(255, 255, 255, 0.05); /* Very subtle hover */
+            background: rgba(255, 255, 255, 0.05); 
         }
 
         .faq-item h3 {
-            font-family: 'Courier New', monospace; /* Keep consistent font */
-            font-size: 17px; /* Matching About p size */
+            font-family: 'Courier New', monospace; 
+            font-size: 17px; 
             color: #e0e0e0;
-            margin-bottom: 0; /* Resetting the 10px margin you had */
+            margin-bottom: 0; 
         }
 
         .faq-answer p {
             font-size: 16px;
             color: #cccccc;
-            padding-bottom: 20px; /* Add space at the bottom of the answer */
+            padding-bottom: 20px; 
         }
 
         .faq-item:last-child {
@@ -394,6 +394,137 @@
         .faq-item h3 {
             color: #ffffff;
             margin-bottom: 10px;
+        }*/
+        
+
+        #faq {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  /* Changed from flex-start to center */
+            padding: 80px 50px;  /* Changed padding */
+            max-width: 600px;  /* Narrower max-width */
+            margin: 0 auto 0 0;  /* Centered */
+        }
+
+        #faq h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ffffff;
+            margin-bottom: 40px;
+            font-weight: 900;
+            padding-left: 0;  /* Remove left padding */
+            text-align: center;
+        }
+
+        .faq-accordion {
+            width: 100%;
+            max-width: 600px;
+            background: transparent;  /* Remove background */
+            backdrop-filter: none;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;  /* Space between items */
+        }
+
+        .faq-item {
+            background: #a8c5ff;  /* Light blue background */
+            border: 3px solid #1a1a4d;  /* Dark blue border */
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .faq-item.active {
+            background: #fff9c4;  /* Yellow background when open */
+        }
+
+        .faq-item:hover {
+            background: rgba(168, 197, 255, 0.8);
+        }
+
+        .faq-item.active:hover {
+            background: #fff9c4;
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            padding: 20px 25px;
+            cursor: pointer;
+            gap: 15px;
+            user-select: none;
+        }
+
+        .faq-item h3 {
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            color: #1a1a4d;  /* Dark blue text */
+            margin: 0;
+            flex: 1;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .faq-toggle {
+            font-size: 18px;
+            color: #1a1a4d;  /* Dark blue arrow */
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 25px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 25px 20px 25px;
+        }
+
+        .faq-answer p {
+            color: #1a1a4d;  /* Dark blue text */
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Contact note at bottom */
+        .faq-contact {
+            background: #d4e3ff;
+            border: 3px solid #1a1a4d;
+            border-radius: 15px;
+            padding: 20px 25px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #1a1a4d;
+            line-height: 1.6;
+        }
+
+        .faq-contact a {
+            color: #ff1493;  /* Pink links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .faq-contact a:hover {
+            text-decoration: underline;
         }
 
         .schedule-day {
@@ -1537,6 +1668,12 @@
                     <div class="faq-answer">
                         <p>Anything! Web apps, mobile apps, hardware projects, games, AI/ML projects—if you can code it, you can build it. We'll have various tracks and prizes.</p>
                     </div>
+                </div>
+
+                <div class="faq-contact">
+                    Have more questions? We're here for you! Send us an email at 
+                    <a href="mailto:hello@hookemhacks.com">hello@hookemhacks.com</a>, or reach out to us on 
+                    <a href="#">Instagram</a> or <a href="#">LinkedIn</a>!
                 </div>
             </div>
         </section>
