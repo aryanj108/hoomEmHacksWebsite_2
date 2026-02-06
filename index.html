@@ -700,6 +700,9 @@
             width: 100%;
             height: 100%;
             object-fit: contain;
+            pointer-events: none;  
+            user-select: none;
+            touch-action: none;
         }
 
         /* Hover scaling without moving */
@@ -1705,6 +1708,43 @@
         const TOP_PADDING = 30;
         const BOTTOM_PADDING = 30;
         const VISUAL_END_BUFFER = 30;
+
+        let isDraggingThumb = false;
+        let dragStartY = 0;
+        let scrollStartY = 0;
+
+        thumb.addEventListener("mousedown", (e) => {
+            isDraggingThumb = true;
+            dragStartY = e.clientY;
+            scrollStartY = window.scrollY;
+
+            document.body.style.userSelect = "none";
+        });
+
+        document.addEventListener("mousemove", (e) => {
+            if (!isDraggingThumb) return;
+
+            const deltaY = e.clientY - dragStartY;
+
+            const pageScrollHeight =
+                document.documentElement.scrollHeight - window.innerHeight;
+
+            const thumbTravelHeight =
+                window.innerHeight - thumb.offsetHeight - VISUAL_END_BUFFER;
+
+            const scrollRatio = pageScrollHeight / thumbTravelHeight;
+
+            window.scrollTo({
+                top: scrollStartY + deltaY * scrollRatio,
+                behavior: "auto"
+            });
+        });
+
+        document.addEventListener("mouseup", () => {
+            isDraggingThumb = false;
+            document.body.style.userSelect = "";
+        });
+
 
         window.addEventListener("scroll", () => {
             const scrollTop = window.scrollY;
