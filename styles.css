@@ -945,6 +945,8 @@ body {
   padding: 40px;
   width: 95%;
   max-width: 1400px;
+  width: 65%;
+  max-width: 1000px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -1059,6 +1061,28 @@ body {
   width: 180px;
   transform: rotate(35deg);
   transform: scale(4.9);
+  right: 50px;
+  top: 0px;
+  width: 180px;
+  transform: rotate(15deg) scale(0.75);
+  animation: jellyfishFloat1 7s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.jellyfish-2 {
+  right: 50px;
+  top: 250px;
+  width: 150px;
+  transform: rotate(-20deg) scale(0.75);
+  animation: jellyfishFloat2 9s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.jellyfish-3 {
+  right: 50px;
+  top: 400px;
+  width: 180px;
+  transform: rotate(15deg) scale(0.75);
   animation: jellyfishFloat3 8s ease-in-out infinite;
   animation-delay: 0.5s;
 }
@@ -1069,6 +1093,10 @@ body {
   width: 160px;
   transform: rotate(-25deg);
   transform: scale(2.3);
+  right: 50px;
+  top: 650px;
+  width: 160px;
+  transform: rotate(-25deg) scale(0.75);
   animation: jellyfishFloat4 10s ease-in-out infinite;
   animation-delay: 0.5s;
 }
@@ -1080,6 +1108,10 @@ body {
   }
   50% {
     transform: rotate(10deg) translateY(-32px);
+    transform: rotate(15deg) scale(0.75) translateY(0px);
+  }
+  50% {
+    transform: rotate(15deg) scale(0.75) translateY(-32px);
   }
 }
 
@@ -1090,6 +1122,10 @@ body {
   }
   50% {
     transform: rotate(-25deg) translateY(-28px);
+    transform: rotate(-20deg) scale(0.75) translateY(0px);
+  }
+  50% {
+    transform: rotate(-20deg) scale(0.75) translateY(-28px);
   }
 }
 
@@ -1100,6 +1136,10 @@ body {
   }
   50% {
     transform: rotate(10deg) translateY(-32px);
+    transform: rotate(20deg) scale(0.75) translateY(0px);
+  }
+  50% {
+    transform: rotate(20deg) scale(0.75) translateY(-32px);
   }
 }
 
@@ -1110,6 +1150,10 @@ body {
   }
   50% {
     transform: rotate(-25deg) translateY(-28px);
+    transform: rotate(-25deg) scale(0.75) translateY(0px);
+  }
+  50% {
+    transform: rotate(-25deg) scale(0.75) translateY(-28px);
   }
 }
 
@@ -1128,6 +1172,7 @@ body {
   pointer-events: none;
   z-index: 1;
   right: -200px;
+  overflow: visible;
 }
 
 #tracks {
