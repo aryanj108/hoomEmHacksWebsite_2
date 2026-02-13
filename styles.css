@@ -701,18 +701,56 @@ body {
 
 /* Meet the Team Section */
 .team-section {
-  padding: 100px 50px;
-  max-width: 1400px;
+  padding: 100px 40px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
   z-index: 10;
 }
 
 .team-section h2 {
-  font-size: 48px;
+  font-size: 36px;
   color: #ffffff;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* Team Tabs */
+.team-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.team-tab {
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.team-tab:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.team-tab.active {
+  background: rgba(0, 217, 255, 0.15);
+  color: #00d9ff;
+  border-color: rgba(0, 217, 255, 0.4);
 }
 
 .team-carousel-container {
@@ -720,68 +758,67 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  padding: 40px 0;
+  gap: 24px;
 }
 
-/* Navigation Arrows (Triangles) */
-.team-nav-arrow {
-  width: 0;
-  height: 0;
-  border-style: solid;
+/* Navigation Arrows */
+.team-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
-  transition: all 0.3s ease;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-}
-
-.team-nav-arrow.left {
-  border-width: 40px 60px 40px 0;
-  border-color: transparent #00d9ff transparent transparent;
-}
-
-.team-nav-arrow.right {
-  border-width: 40px 0 40px 60px;
-  border-color: transparent transparent transparent #00d9ff;
-}
-
-.team-nav-arrow:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 6px 12px rgba(0, 217, 255, 0.5));
-}
-
-.team-nav-arrow.left:hover {
-  border-color: transparent #5ac8e8 transparent transparent;
-}
-
-.team-nav-arrow.right:hover {
-  border-color: transparent transparent transparent #5ac8e8;
-}
-
-/* Team Display Card */
-.team-display {
-  background: linear-gradient(135deg, #0a4d68 0%, #1a6b8a 100%);
-  border: 4px solid #00d9ff;
-  border-radius: 20px;
-  padding: 40px;
-  max-width: 800px;
-  width: 100%;
-  box-shadow: 0 20px 60px rgba(0, 217, 255, 0.3);
-  min-height: 400px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  backdrop-filter: blur(8px);
+}
+
+.team-arrow:hover {
+  background: rgba(0, 217, 255, 0.12);
+  border-color: rgba(0, 217, 255, 0.4);
+  color: #00d9ff;
+  transform: scale(1.05);
+}
+
+.team-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Team Card */
+.team-card {
+  background: rgba(0, 10, 20, 0.3);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 700px;
+  width: 100%;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.team-card.fade-out {
+  opacity: 0;
+  transform: scale(0.97);
+}
+
+.team-card.fade-in {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .team-photo-container {
   width: 100%;
-  max-width: 600px;
-  height: 300px;
-  border-radius: 15px;
+  height: 320px;
   overflow: hidden;
-  margin-bottom: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  border: 3px solid rgba(255, 255, 255, 0.2);
+  position: relative;
 }
 
 .team-photo-container img {
@@ -792,57 +829,69 @@ body {
 }
 
 .team-info {
-  text-align: center;
-  width: 100%;
+  padding: 28px 32px 32px;
 }
 
 .team-info h3 {
-  color: #00d9ff;
-  font-size: 32px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.team-info .team-members {
-  color: #5ac8e8;
-  font-size: 16px;
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-.team-info .team-leads {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.team-detail {
+  margin-bottom: 14px;
+}
+
+.team-detail:last-child {
+  margin-bottom: 0;
+}
+
+.team-label {
+  display: block;
+  color: #00d9ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.team-detail p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 /* Carousel Indicators */
 .team-indicators {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 30px;
+  gap: 8px;
+  margin-top: 32px;
 }
 
 .indicator-dot {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .indicator-dot.active {
   background: #00d9ff;
-  transform: scale(1.3);
-  box-shadow: 0 0 10px rgba(0, 217, 255, 0.8);
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(0, 217, 255, 0.5);
 }
 
 .indicator-dot:hover {
-  background: #5ac8e8;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 /* Footer Styles */
