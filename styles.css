@@ -619,7 +619,7 @@ body {
   right: 20px;
   top: 0;
   width: 12px;
-  height: 100%;
+  height: calc(100% - 75px); /* ends 75px above bottom of page */
   background: rgba(255, 255, 255, 0.4);
 }
 
@@ -629,8 +629,8 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   top: 0;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   cursor: pointer;
   pointer-events: auto;
   transition: transform 0.15s ease;
