@@ -343,8 +343,16 @@
             <div class="faq-contact">
               Have more questions? We're here for you! Send us an email at
               <a href="mailto:hello@hookemhacks.com">hello@hookemhacks.com</a>,
-              or reach out to us on <a href="#">Instagram</a> or
-              <a href="#">LinkedIn</a>!
+              or reach out to us on
+              <a href="https://www.instagram.com/hookemhacks" target="_blank"
+                >Instagram</a
+              >
+              or
+              <a
+                href="https://www.linkedin.com/company/hook-em-hacks"
+                target="_blank"
+                >LinkedIn</a
+              >!
             </div>
           </div>
         </div>
@@ -532,10 +540,29 @@
       <section id="team" class="team-section">
         <h2>Meet the Team</h2>
 
-        <div class="team-carousel-container">
-          <div class="team-nav-arrow left" onclick="changeTeam(-1)"></div>
+        <div class="team-tabs" id="teamTabs"></div>
 
-          <div class="team-display">
+        <div class="team-carousel-container">
+          <button
+            class="team-arrow team-arrow-left"
+            onclick="changeTeam(-1)"
+            aria-label="Previous team"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <div class="team-card" id="teamCard">
             <div class="team-photo-container">
               <img
                 id="teamPhoto"
@@ -545,12 +572,35 @@
             </div>
             <div class="team-info">
               <h3 id="teamName"></h3>
-              <p class="team-leads" id="teamLeads"></p>
-              <p class="team-members" id="teamMembers"></p>
+              <div class="team-detail">
+                <span class="team-label">Leads</span>
+                <p id="teamLeads"></p>
+              </div>
+              <div class="team-detail">
+                <span class="team-label">Members</span>
+                <p id="teamMembers"></p>
+              </div>
             </div>
           </div>
 
-          <div class="team-nav-arrow right" onclick="changeTeam(1)"></div>
+          <button
+            class="team-arrow team-arrow-right"
+            onclick="changeTeam(1)"
+            aria-label="Next team"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
         </div>
 
         <div class="team-indicators" id="teamIndicators"></div>
