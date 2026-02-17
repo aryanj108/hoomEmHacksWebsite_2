@@ -485,18 +485,10 @@ body {
   align-items: flex-start;
   gap: 50px;
   position: relative;
-  margin-top: 60px;
 }
 
 .sponsors-content {
   flex: 1;
-}
-
-.sponsors-tiers {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
 }
 
 .hero-tower {
@@ -1092,7 +1084,7 @@ body {
 
 /* Individual jellyfish with different positions, sizes, and rotations */
 .jellyfish-1 {
-  right: 50px;
+  left: -120px; /* changed from right */
   top: 100px;
   width: 180px;
   transform: rotate(15deg) scale(0.75);
@@ -1101,7 +1093,7 @@ body {
 }
 
 .jellyfish-2 {
-  right: 80px;
+  left: -120px; /* changed from right */
   top: 325px;
   width: 150px;
   transform: rotate(-20deg) scale(0.75);
@@ -1111,7 +1103,7 @@ body {
 
 .jellyfish-3 {
   right: 50px;
-  top: 470px;
+  top: 100px;
   width: 180px;
   transform: rotate(15deg) scale(0.75);
   animation: jellyfishFloat3 8s ease-in-out infinite;
@@ -1120,7 +1112,7 @@ body {
 
 .jellyfish-4 {
   right: 90px;
-  top: 700px;
+  top: 325px;
   width: 160px;
   transform: rotate(-25deg) scale(0.75);
   animation: jellyfishFloat4 10s ease-in-out infinite;
@@ -1170,7 +1162,7 @@ body {
 .jellyfish-decoration {
   position: absolute;
   pointer-events: none;
-  z-index: 1;
+  z-index: -1;
   right: 50px;
   overflow: visible;
 }
@@ -1229,191 +1221,6 @@ body {
   }
 }
 
-/* ==============================
-   SPONSORS SECTION - NEW TIERED LAYOUT
-   ============================== */
-
-#sponsors {
-  padding: 100px 50px;
-  max-width: 100%;
-  margin: 0;
-}
-
-/* Centered Header */
-.sponsors-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.sponsors-header h2 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 48px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #ffffff;
-  margin-bottom: 20px;
-  font-weight: 900;
-}
-
-.sponsors-header p {
-  font-size: 18px;
-  color: #ffffff;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Auto-scrolling Sponsor Logos Container */
-.sponsors-scroll-container {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 80px;
-  padding: 40px 0;
-  background: rgba(0, 10, 20, 0.15);
-  backdrop-filter: blur(8px);
-}
-
-.sponsors-scroll-track {
-  display: flex;
-  animation: scroll 30s linear infinite;
-  gap: 60px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.sponsor-logo-item {
-  flex-shrink: 0;
-  width: 200px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.sponsor-logo-item:hover {
-  transform: scale(1.05);
-}
-
-.sponsor-logo-item img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-/* Pause animation on hover */
-.sponsors-scroll-container:hover .sponsors-scroll-track {
-  animation-play-state: paused;
-}
-
-/* TIERED SPONSOR STRUCTURE */
-.sponsors-tiered-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  align-items: center;
-  width: 100%;
-}
-
-.sponsor-tier {
-  width: 100%;
-  padding: 30px 0;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.sponsor-tier:last-child {
-  border-bottom: none;
-}
-
-.sponsor-tier-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.sponsor-logo-container {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 12px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.sponsor-logo-container img[src*="vercel"] {
-  transform: scale(2);
-}
-
-.sponsor-logo-container:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-.sponsor-logo-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-/* Tier 1 - Platinum (Largest) */
-.tier-1 .sponsor-logo-container {
-  width: 250px;
-  height: 120px;
-}
-
-.tier-1 .sponsor-tier-logos {
-  gap: 50px;
-}
-
-/* Tier 2 - Gold (Medium-Large) */
-.tier-2 .sponsor-logo-container {
-  width: 200px;
-  height: 100px;
-}
-
-.tier-2 .sponsor-tier-logos {
-  gap: 45px;
-}
-
-/* Tier 3 - Silver (Medium) */
-.tier-3 .sponsor-logo-container {
-  width: 180px;
-  height: 90px;
-}
-
-.tier-3 .sponsor-tier-logos {
-  gap: 40px;
-}
-
-/* Tier 4 - Bronze (Smallest) */
-.tier-4 .sponsor-logo-container {
-  width: 150px;
-  height: 75px;
-}
-
-.tier-4 .sponsor-tier-logos {
-  gap: 35px;
-}
-
 /* Mobile responsiveness */
 @media (max-width: 968px) {
   .sponsors-with-tower {
@@ -1425,10 +1232,6 @@ body {
     position: relative;
     top: 0;
     margin-bottom: 30px;
-  }
-
-  .sponsors-tiers {
-    grid-template-columns: 1fr;
   }
 
   #faq {
@@ -1530,36 +1333,6 @@ body {
     right: -80px;
     opacity: 0.6;
   }
-
-  .sponsor-logo-item {
-    width: 150px;
-    height: 90px;
-  }
-
-  .sponsors-scroll-track {
-    gap: 40px;
-  }
-
-  /* Tiered sponsor adjustments for mobile */
-  .tier-1 .sponsor-logo-container {
-    width: 220px;
-    height: 110px;
-  }
-
-  .tier-2 .sponsor-logo-container {
-    width: 180px;
-    height: 90px;
-  }
-
-  .tier-3 .sponsor-logo-container {
-    width: 150px;
-    height: 75px;
-  }
-
-  .tier-4 .sponsor-logo-container {
-    width: 120px;
-    height: 60px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1591,39 +1364,5 @@ body {
 
   .team-info h3 {
     font-size: 20px;
-  }
-
-  .sponsor-logo-item {
-    width: 120px;
-    height: 75px;
-  }
-
-  .sponsors-header h2 {
-    font-size: 36px;
-  }
-
-  .sponsors-header p {
-    font-size: 16px;
-  }
-
-  /* Tiered sponsor adjustments for small mobile */
-  .tier-1 .sponsor-logo-container {
-    width: 180px;
-    height: 90px;
-  }
-
-  .tier-2 .sponsor-logo-container {
-    width: 150px;
-    height: 75px;
-  }
-
-  .tier-3 .sponsor-logo-container {
-    width: 120px;
-    height: 60px;
-  }
-
-  .tier-4 .sponsor-logo-container {
-    width: 100px;
-    height: 50px;
   }
 }
