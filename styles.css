@@ -1207,8 +1207,9 @@ body {
 }
 
 .faq-side img {
-  width: 1000px;
-  height: auto;
+  width: 750px;
+  height: 750px;
+  transform: translateX(-40px);
 }
 
 @keyframes faqGraphicFloat {
