@@ -540,6 +540,28 @@ body {
   display: block;
 }
 
+/* register button */
+#registButton {
+  position: absolute;
+  top: 55%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+  background-color: #0034a3;
+  color: white; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 12px 24px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.2s ease;
+}
+#registButton:hover {
+  background-color: #003cbe;
+}
+
 @keyframes float {
   0%,
   100% {
