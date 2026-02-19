@@ -1334,7 +1334,7 @@ body {
 }
 
 .sponsor-logo-item:hover {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 .sponsor-logo-item img {
@@ -1385,11 +1385,11 @@ body {
 }
 
 .sponsor-logo-container img[src*="vercel"] {
-  transform: scale(2);
+  transform: scale(1);
 }
 
 .sponsor-logo-container img[src*="red-bulls"] {
-  transform: scale(1.5);
+  transform: scale(1);
 }
 
 .sponsor-logo-container:hover {
