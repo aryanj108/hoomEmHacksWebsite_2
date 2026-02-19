@@ -1065,19 +1065,25 @@ body {
 
 /* Grid Layout */
 .tracks-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   padding: 20px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
+.track-card {
+  flex: 0 0 calc(33.333% - 25px);
+  max-width: calc(33.333% - 25px);
+}
+
 /* Individual Cards */
 .track-card {
-  background: rgba(63, 63, 63, 0.2);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(63, 63, 63, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   border-radius: 15px;
   padding: 40px 20px;
   text-align: center;
@@ -1201,7 +1207,7 @@ body {
   width: 80%;
   max-width: 1200px;
   opacity: 1;
-  z-index: 5;
+  z-index: 1;
   pointer-events: none;
 }
 
