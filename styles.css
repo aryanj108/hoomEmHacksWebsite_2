@@ -629,11 +629,11 @@ body {
 
 /* Custom Scrollbar Container */
 .custom-scrollbar {
-  position: fixed;
+  position: absolute;
   right: 20px;
   top: 0;
   width: 60px;
-  height: 100vh;
+  /* height: 100%; */
   z-index: 998;
   pointer-events: none;
 }
