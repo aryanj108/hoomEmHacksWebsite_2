@@ -1394,7 +1394,8 @@ body {
 
 .sponsor-logo-container:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: scale(1.35);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
 }
 
 .sponsor-logo-container img {
