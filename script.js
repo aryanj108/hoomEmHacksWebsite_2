@@ -158,9 +158,10 @@ window.addEventListener("scroll", () => {
 // Smooth Scroll for Navigation Links
 document.querySelectorAll(".navbar-links a").forEach((link) => {
   link.addEventListener("click", (e) => {
+    const href = link.getAttribute("href");
+    if (!href.startsWith("#")) return; 
     e.preventDefault();
-    const targetId = link.getAttribute("href");
-    const targetSection = document.querySelector(targetId);
+    const targetSection = document.querySelector(href);
     isScrollingFromClick = true;
     navbar.classList.remove("hidden");
     navbar.classList.add("visible");
@@ -259,3 +260,8 @@ document.getElementById("logoLink").addEventListener("click", (e) => {
 buildTeamTabs();
 updateIndicators();
 updateTeamDisplay();
+
+// Register Button Navigation
+document.getElementById("registButton").addEventListener("click", () => {
+  window.open("https://google.com/", "_blank");
+});
