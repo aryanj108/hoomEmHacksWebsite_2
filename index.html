@@ -133,72 +133,118 @@
 
       <section id="schedule" class="section">
         <h2>Event Schedule</h2>
+        <div class="schedule-grid-wrapper">
+          <div class="schedule-grid">
+            <!-- Time Labels Column -->
+            <div class="schedule-col time-col">
+              <div class="schedule-day-header"></div>
+              <div class="time-slot">8AM</div>
+              <div class="time-slot">9AM</div>
+              <div class="time-slot">10AM</div>
+              <div class="time-slot">11AM</div>
+              <div class="time-slot">12PM</div>
+              <div class="time-slot">1PM</div>
+              <div class="time-slot">2PM</div>
+              <div class="time-slot">3PM</div>
+              <div class="time-slot">4PM</div>
+              <div class="time-slot">5PM</div>
+              <div class="time-slot">6PM</div>
+              <div class="time-slot">7PM</div>
+              <div class="time-slot">8PM</div>
+              <div class="time-slot">9PM</div>
+              <div class="time-slot">10PM</div>
+              <div class="time-slot">11PM</div>
+              <div class="time-slot">12AM</div>
+            </div>
 
-        <div class="schedule-day">
-          <h3>Day 1 - April 18, 2026</h3>
-          <div class="schedule-item">
-            <div class="schedule-time">9:00 AM</div>
-            <div>Check-in & Registration</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">10:00 AM</div>
-            <div>Opening Ceremony</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">11:00 AM</div>
-            <div>Hacking Begins!</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">12:00 PM</div>
-            <div>Lunch</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">2:00 PM</div>
-            <div>Workshop: Intro to React</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">4:00 PM</div>
-            <div>Workshop: Machine Learning Basics</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">6:00 PM</div>
-            <div>Dinner</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">8:00 PM</div>
-            <div>Mini Event: Cup Stacking</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">12:00 AM</div>
-            <div>Midnight Snacks</div>
-          </div>
-        </div>
+            <!-- Day 1 Column -->
+            <div class="schedule-col day-col">
+              <div class="schedule-day-header">4/18</div>
+              <div class="schedule-events" style="--rows: 16;">
+                <!-- Check-in: 9AM, 1hr -->
+                <div class="sched-event color-blue" style="--start: 1; --span: 1;">
+                  <span class="event-name">Check-in &amp; Registration</span>
+                  <span class="event-time">9:00 AM</span>
+                </div>
+                <!-- Opening Ceremony: 10AM, 1hr -->
+                <div class="sched-event color-teal" style="--start: 2; --span: 1;">
+                  <span class="event-name">Opening Ceremony</span>
+                  <span class="event-time">10:00 AM</span>
+                </div>
+                <!-- Hacking Begins: 11AM, 1hr -->
+                <div class="sched-event color-orange" style="--start: 3; --span: 1;">
+                  <span class="event-name">🚀 Hacking Begins!</span>
+                  <span class="event-time">11:00 AM</span>
+                </div>
+                <!-- Lunch: 12PM, 1hr -->
+                <div class="sched-event color-green" style="--start: 4; --span: 1;">
+                  <span class="event-name">Lunch</span>
+                  <span class="event-time">12:00 PM</span>
+                </div>
+                <!-- Workshop React: 2PM, 2hr -->
+                <div class="sched-event color-purple" style="--start: 6; --span: 2;">
+                  <span class="event-name">Workshop: Intro to React</span>
+                  <span class="event-time">2:00 PM</span>
+                </div>
+                <!-- Workshop ML: 4PM, 2hr -->
+                <div class="sched-event color-purple" style="--start: 8; --span: 2;">
+                  <span class="event-name">Workshop: ML Basics</span>
+                  <span class="event-time">4:00 PM</span>
+                </div>
+                <!-- Dinner: 6PM, 1hr -->
+                <div class="sched-event color-green" style="--start: 10; --span: 1;">
+                  <span class="event-name">Dinner</span>
+                  <span class="event-time">6:00 PM</span>
+                </div>
+                <!-- Mini Event: 8PM, 1hr -->
+                <div class="sched-event color-orange" style="--start: 12; --span: 1;">
+                  <span class="event-name">🏆 Cup Stacking</span>
+                  <span class="event-time">8:00 PM</span>
+                </div>
+                <!-- Midnight Snacks: 12AM, 1hr -->
+                <div class="sched-event color-teal" style="--start: 16; --span: 1;">
+                  <span class="event-name">🍕 Midnight Snacks</span>
+                  <span class="event-time">12:00 AM</span>
+                </div>
+              </div>
+            </div>
 
-        <div class="schedule-day">
-          <h3>Day 2 - April 19, 2026</h3>
-          <div class="schedule-item">
-            <div class="schedule-time">8:00 AM</div>
-            <div>Breakfast</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">11:00 AM</div>
-            <div>Hacking Ends - Submissions Due</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">12:00 PM</div>
-            <div>Lunch & Judging Begins</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">2:00 PM</div>
-            <div>Final Presentations</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">4:00 PM</div>
-            <div>Closing Ceremony & Awards</div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">5:00 PM</div>
-            <div>Event Ends</div>
+            <!-- Day 2 Column -->
+            <div class="schedule-col day-col">
+              <div class="schedule-day-header">4/19</div>
+              <div class="schedule-events" style="--rows: 16;">
+                <!-- Breakfast: 8AM -->
+                <div class="sched-event color-green" style="--start: 0; --span: 1;">
+                  <span class="event-name">Breakfast</span>
+                  <span class="event-time">8:00 AM</span>
+                </div>
+                <!-- Hacking ends: 11AM -->
+                <div class="sched-event color-orange" style="--start: 3; --span: 1;">
+                  <span class="event-name">🛑 Hacking Ends</span>
+                  <span class="event-time">11:00 AM</span>
+                </div>
+                <!-- Lunch & Judging: 12PM, 2hr -->
+                <div class="sched-event color-blue" style="--start: 4; --span: 2;">
+                  <span class="event-name">Lunch &amp; Judging</span>
+                  <span class="event-time">12:00 PM</span>
+                </div>
+                <!-- Final Presentations: 2PM, 2hr -->
+                <div class="sched-event color-purple" style="--start: 6; --span: 2;">
+                  <span class="event-name">Final Presentations</span>
+                  <span class="event-time">2:00 PM</span>
+                </div>
+                <!-- Closing: 4PM, 1hr -->
+                <div class="sched-event color-teal" style="--start: 8; --span: 1;">
+                  <span class="event-name">🎉 Closing &amp; Awards</span>
+                  <span class="event-time">4:00 PM</span>
+                </div>
+                <!-- Event Ends: 5PM -->
+                <div class="sched-event color-orange" style="--start: 9; --span: 1;">
+                  <span class="event-name">Event Ends</span>
+                  <span class="event-time">5:00 PM</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

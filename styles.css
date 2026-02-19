@@ -412,38 +412,116 @@ body {
   text-decoration: underline;
 }
 
-.schedule-day {
-  background: transparent;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.schedule-grid-wrapper {
+  overflow-x: auto;
+  border-radius: 16px;
 }
 
-.schedule-day h3 {
-  color: #ffffff;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.schedule-item {
+.schedule-grid {
   display: flex;
-  gap: 20px;
-  padding: 15px 0;
+  min-width: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.15);
+  background: rgba(0, 20, 50, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.schedule-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-col {
+  flex: 0 0 60px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.day-col {
+  flex: 1;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.day-col:last-child {
+  border-right: none;
+}
+
+.schedule-day-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+  font-weight: 900;
   color: #ffffff;
-  border-bottom: 1px solid #eee;
+  letter-spacing: 2px;
+  background: rgba(0, 30, 70, 0.6);
+  border-bottom: 2px solid rgba(255,255,255,0.15);
 }
 
-.schedule-item:last-child {
-  border-bottom: none;
+.time-slot {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  letter-spacing: 1px;
 }
 
-.schedule-time {
-  font-weight: bold;
+/* Events Grid */
+.schedule-events {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(var(--rows), 60px);
+  padding: 0 6px;
+  gap: 0;
+  padding-top: 0;
+}
+
+.sched-event {
+  grid-row: calc(var(--start) + 1) / span var(--span);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin: 3px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: default;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  overflow: hidden;
+}
+
+.sched-event:hover {
+  transform: scale(1.03);
+  filter: brightness(1.15);
+  z-index: 10;
+}
+
+.event-name {
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 700;
   color: #ffffff;
-  min-width: 100px;
+  line-height: 1.3;
 }
 
+.event-time {
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  color: rgba(255,255,255,0.7);
+  margin-top: 4px;
+}
+
+/* Event Colors */
+.color-blue   { background: rgba(0, 80, 200, 0.75);  border-left: 3px solid #4da6ff; }
+.color-teal   { background: rgba(0, 140, 160, 0.75); border-left: 3px solid #00d9ff; }
+.color-orange { background: rgba(180, 80, 0, 0.75);  border-left: 3px solid #ff8c00; }
+.color-green  { background: rgba(20, 120, 60, 0.75); border-left: 3px solid #00e676; }
+.color-purple { background: rgba(80, 0, 160, 0.75);  border-left: 3px solid #bf7fff; }
 /* Hero Section with UT Tower and Banner */
 .hero-section {
   min-height: 100vh;
@@ -629,11 +707,11 @@ body {
 
 /* Custom Scrollbar Container */
 .custom-scrollbar {
-  position: absolute;
+  position: fixed;
   right: 20px;
   top: 0;
   width: 60px;
-  /* height: 100%; */
+  height: 100vh;
   z-index: 998;
   pointer-events: none;
 }
