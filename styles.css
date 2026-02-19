@@ -1284,7 +1284,7 @@ body {
   overflow: hidden;
   margin-bottom: 40px;
   padding: 10px 0;
-  background: rgba(0, 10, 20, 0.15);
+  background: rgba(0, 10, 20, 0);
   backdrop-filter: blur(8px);
   /* THE FADE EFFECT */
   -webkit-mask-image: linear-gradient(
@@ -1305,7 +1305,7 @@ body {
 
 .sponsors-scroll-track {
   display: flex;
-  animation: scroll 15s linear infinite; /*CHANGE SPEED HERE*/
+  animation: scroll 25s linear infinite; /*CHANGE SPEED HERE*/
   width: max-content;
   gap: 0;
 }
