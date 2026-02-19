@@ -60,6 +60,16 @@ const teams = [
   },
 ];
 
+// set scrollbar height
+document.addEventListener('DOMContentLoaded', () => {
+  var ht = document.body.offsetHeight;
+  document.querySelector(".custom-scrollbar").style.height = ht + "px";
+})
+window.addEventListener('resize', () => {
+  var ht = document.body.offsetHeight;
+  document.querySelector(".custom-scrollbar").style.height = ht + "px";
+});
+
 let currentTeamIndex = 0;
 
 // Ocean Bubbles
@@ -117,7 +127,7 @@ window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const progress = scrollTop / maxScroll;
-  const viewportHeight = window.innerHeight;
+  const viewportHeight = document.documentElement.offsetHeight;
   const thumbHeight = thumb.offsetHeight;
   const maxY = viewportHeight - thumbHeight - VISUAL_END_BUFFER;
   const y = progress * maxY;
