@@ -560,6 +560,7 @@ body {
   height: auto;
   display: block;
   object-fit: contain;
+  animation: faqGraphicFloat 6s ease-in-out infinite;
 }
 
 .sponsors-with-tower {
@@ -1162,9 +1163,15 @@ body {
 }
 
 .swimming-bevo {
-  width: 300px;
   margin: 0 auto;
   display: block;
+}
+
+.swimming-bevo img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  animation: faqGraphicFloat 6s ease-in-out infinite;
 }
 
 /* Individual Cards */
@@ -1305,9 +1312,9 @@ body {
 }
 
 .faq-side img {
-  width: 750px;
-  height: 750px;
-  transform: translateX(-40px);
+  width: 950px;
+  height: 950px;
+  transform: translateX(-100px) translateY(-100px);;
 }
 
 @keyframes faqGraphicFloat {
