@@ -1065,19 +1065,25 @@ body {
 
 /* Grid Layout */
 .tracks-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   padding: 20px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
+.track-card {
+  flex: 0 0 calc(33.333% - 25px);
+  max-width: calc(33.333% - 25px);
+}
+
 /* Individual Cards */
 .track-card {
-  background: rgba(63, 63, 63, 0.2);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(63, 63, 63, 0.3);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   border-radius: 15px;
   padding: 40px 20px;
   text-align: center;
@@ -1091,14 +1097,14 @@ body {
 
 /* Text Styling */
 .track-card h3 {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.8rem;
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
 .track-card p {
-  color: #e0e0e0;
+  color: #000000;
   font-size: 0.9rem;
   line-height: 1.6;
   font-family: "Courier New", monospace;
@@ -1201,7 +1207,7 @@ body {
   width: 80%;
   max-width: 1200px;
   opacity: 1;
-  z-index: 5;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -1284,7 +1290,7 @@ body {
   overflow: hidden;
   margin-bottom: 40px;
   padding: 10px 0;
-  background: rgba(0, 10, 20, 0.15);
+  background: rgba(0, 10, 20, 0);
   backdrop-filter: blur(8px);
   /* THE FADE EFFECT */
   -webkit-mask-image: linear-gradient(
@@ -1305,7 +1311,7 @@ body {
 
 .sponsors-scroll-track {
   display: flex;
-  animation: scroll 15s linear infinite; /*CHANGE SPEED HERE*/
+  animation: scroll 25s linear infinite; /*CHANGE SPEED HERE*/
   width: max-content;
   gap: 0;
 }
@@ -1334,7 +1340,7 @@ body {
 }
 
 .sponsor-logo-item:hover {
-  transform: scale(1.05);
+  transform: scale(1);
 }
 
 .sponsor-logo-item img {
@@ -1356,7 +1362,7 @@ body {
 .sponsor-tier {
   width: 100%;
   padding: 30px 0;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0px solid rgba(255, 255, 255, 0.2);
 }
 
 .sponsor-tier:last-child {
@@ -1385,16 +1391,17 @@ body {
 }
 
 .sponsor-logo-container img[src*="vercel"] {
-  transform: scale(2);
+  transform: scale(1);
 }
 
 .sponsor-logo-container img[src*="red-bulls"] {
-  transform: scale(1.5);
+  transform: scale(1);
 }
 
 .sponsor-logo-container:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transform: scale(1.35);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
 }
 
 .sponsor-logo-container img {
@@ -1589,3 +1596,12 @@ body {
     font-size: 20px;
   }
 }
+
+  .footer-bottom-bar {
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
