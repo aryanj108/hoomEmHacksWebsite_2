@@ -1081,7 +1081,7 @@ body {
 
 /* Individual Cards */
 .track-card {
-  background: rgba(63, 63, 63, 0.1);
+  background: rgba(63, 63, 63, 0.3);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
   border-radius: 15px;
@@ -1097,14 +1097,14 @@ body {
 
 /* Text Styling */
 .track-card h3 {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.8rem;
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
 
 .track-card p {
-  color: #e0e0e0;
+  color: #000000;
   font-size: 0.9rem;
   line-height: 1.6;
   font-family: "Courier New", monospace;
