@@ -103,14 +103,10 @@ thumb.addEventListener("mousedown", (e) => {
 
 document.addEventListener("mousemove", (e) => {
   if (!isDraggingThumb) return;
-
   const deltaY = e.clientY - dragStartY;
-  const pageScrollHeight =
-    document.documentElement.scrollHeight - window.innerHeight;
-  const thumbTravelHeight =
-    window.innerHeight - thumb.offsetHeight - VISUAL_END_BUFFER;
-  const scrollRatio = pageScrollHeight / thumbTravelHeight;
-
+  const pageScrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const thumbMaxY = window.innerHeight - thumb.offsetHeight;
+  const scrollRatio = pageScrollHeight / thumbMaxY;
   window.scrollTo({
     top: scrollStartY + deltaY * scrollRatio,
     behavior: "auto",
@@ -127,9 +123,8 @@ window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const progress = scrollTop / maxScroll;
-  const viewportHeight = document.documentElement.offsetHeight;
   const thumbHeight = thumb.offsetHeight;
-  const maxY = viewportHeight - thumbHeight - VISUAL_END_BUFFER;
+  const maxY = window.innerHeight - thumbHeight;
   const y = progress * maxY;
   thumb.style.top = `${y}px`;
 });
