@@ -1362,7 +1362,7 @@ body {
 .sponsor-tier {
   width: 100%;
   padding: 30px 0;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0px solid rgba(255, 255, 255, 0.2);
 }
 
 .sponsor-tier:last-child {
