@@ -1,3 +1,7 @@
+.svg-background-overlay {
+  pointer-events: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -530,7 +534,6 @@ body {
   margin: 0 auto;
   z-index: 2;
   border-radius: 20px;
-  overflow: hidden;
   animation: float 6s ease-in-out infinite;
 }
 
@@ -546,7 +549,7 @@ body {
   top: 55%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
-  z-index: 1; 
+  z-index: 10; 
   background-color: #0034a3;
   color: white; 
   border: none; 

@@ -187,6 +187,7 @@ document.querySelectorAll(".faq-question").forEach((question) => {
 });
 
 // Team Carousel Functions
+/*
 function buildTeamTabs() {
   const tabsContainer = document.getElementById("teamTabs");
   tabsContainer.innerHTML = "";
@@ -197,7 +198,7 @@ function buildTeamTabs() {
     tab.onclick = () => goToTeam(index);
     tabsContainer.appendChild(tab);
   });
-}
+}*/
 
 function updateTeamDisplay() {
   const team = teams[currentTeamIndex];
@@ -207,7 +208,7 @@ function updateTeamDisplay() {
   document.getElementById("teamLeads").textContent = team.leads;
   document.getElementById("teamMembers").textContent = team.members;
   updateIndicators();
-  buildTeamTabs();
+  //buildTeamTabs();
 }
 
 function changeTeam(direction) {
@@ -257,11 +258,16 @@ document.getElementById("logoLink").addEventListener("click", (e) => {
 });
 
 // Initialize Team Display
-buildTeamTabs();
+//buildTeamTabs();
 updateIndicators();
 updateTeamDisplay();
 
 // Register Button Navigation
-document.getElementById("registButton").addEventListener("click", () => {
+document.getElementById("registButton").addEventListener("click", (e) => {
+  e.stopPropagation();
   window.open("https://google.com/", "_blank");
+});
+
+document.addEventListener('click', (e) => {
+  console.log('Clicked element:', e.target, e.target.id);
 });
