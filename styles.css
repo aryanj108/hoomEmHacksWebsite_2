@@ -1671,7 +1671,7 @@ body {
 }
 
 .footer-bottom-bar {
-  background-color: #001a33; /* dark navy — adjust to match your design */
+  background-color: #001a33; 
   padding: 30px 20px;
   text-align: center;
   display: flex;
@@ -1680,7 +1680,6 @@ body {
   gap: 10px;
 }
 
-/* Make footer text visible on dark background */
 .footer-made-with,
 .footer-copyright,
 .footer-dot {
