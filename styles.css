@@ -741,6 +741,7 @@ body {
   width: 12px;
   height: 100%;
   background: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
 }
 
 /* Scrollbar Thumb (icon) */
@@ -1384,8 +1385,10 @@ body {
   overflow: hidden;
   margin-bottom: 40px;
   padding: 10px 0px;
+  /*
   background: rgba(0, 10, 20, 0);
   backdrop-filter: blur(8px);
+  */
   /* THE FADE EFFECT */
   -webkit-mask-image: linear-gradient(
     to right,
