@@ -11,11 +11,20 @@
 body {
   font-family: "Courier New", monospace;
   overflow-x: hidden;
-  background: #99ccee;
-  background-image: url('../updatedAssets/websiteBackground.svg');
-  background-repeat: repeat-y;
-  background-size: 100% auto;
-  background-position: top center;
+  background-image: 
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent calc(100vw * 0.58),
+      #99ccee calc(100vw * 0.617),
+      #99ccee calc(100vw * 0.650),
+      transparent calc(100vw * 0.667)
+    ),
+    url('../updatedAssets/websiteBackground.svg');
+  background-size: 100% auto, 100% auto;
+  background-repeat: repeat-y, repeat-y;
+  background-position: top center, top center;
+  background-color: #99ccee;
 }
 
 /* Landing Section */
