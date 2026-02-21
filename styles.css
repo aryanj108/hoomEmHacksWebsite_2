@@ -1675,7 +1675,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: calc(100vw * 0.367);
+  height: calc(100vw * 0.37);
   padding: 30px 20px;
   text-align: center;
   display: flex;
