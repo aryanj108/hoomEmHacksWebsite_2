@@ -12,6 +12,7 @@ window.scrollTo(0, 0);
 const navbar = document.getElementById("navbar");
 const oceanBackground = document.getElementById("oceanBackground");
 const thumb = document.getElementById("scrollThumb");
+const track = document.querySelector(".custom-scrollbar-track");
 
 // Constants
 const TOP_PADDING = 30;
@@ -61,6 +62,7 @@ const teams = [
 ];
 
 // set scrollbar height
+/*
 document.addEventListener('DOMContentLoaded', () => {
   var ht = document.body.offsetHeight;
   document.querySelector(".custom-scrollbar").style.height = ht + "px";
@@ -69,6 +71,7 @@ window.addEventListener('resize', () => {
   var ht = document.body.offsetHeight;
   document.querySelector(".custom-scrollbar").style.height = ht + "px";
 });
+*/
 
 let currentTeamIndex = 0;
 
@@ -127,6 +130,16 @@ window.addEventListener("scroll", () => {
   const maxY = window.innerHeight - thumbHeight;
   const y = progress * maxY;
   thumb.style.top = `${y}px`;
+
+  // Adjust scrollbar-track height based on scroll position
+  const distanceFromBottom = document.documentElement.scrollHeight - (scrollTop + window.innerHeight);
+  if (distanceFromBottom <= 200) {
+    // near bottom, steadily retract scrollbar track to 90%
+    const trackHeight = 90 + distanceFromBottom/20;
+    track.style.height = `${trackHeight}%`;
+  } else {
+    track.style.height = "100%";
+  }
 });
 
 // Parallax Effect

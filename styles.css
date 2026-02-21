@@ -735,11 +735,11 @@ body {
 
 /* Scrollbar Track */
 .custom-scrollbar-track {
-  position: absolute;
-  right: 20px;
+  position: fixed;
+  right: 40px;
   top: 0;
   width: 12px;
-  height: calc(100% - 75px); /* ends 75px above bottom of page */
+  height: 100%;
   background: rgba(255, 255, 255, 0.4);
 }
 
