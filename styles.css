@@ -14,11 +14,10 @@ body {
   background-image: 
     repeating-linear-gradient(
       to bottom,
-      transparent 0,
-      transparent calc(100vw * 0.58),
-      #99ccee calc(100vw * 0.617),
-      #99ccee calc(100vw * 0.650),
-      transparent calc(100vw * 0.667)
+      #99ccee 0,
+      transparent calc(100vw * 0.05),
+      transparent calc(100vw * 0.62),
+      #99ccee calc(100vw * 0.667)
     ),
     url('../updatedAssets/websiteBackground.svg');
   background-size: 100% auto, 100% auto;
