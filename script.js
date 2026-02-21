@@ -30,6 +30,12 @@ let scrollStartY = 0;
 // Team data
 const teams = [ 
   {
+    name: "ENTIRE TEAM",
+    photo: "../assets/team/design_team.jpg",
+    leads: "Leads: ###",
+    members: "Members: ###",
+  },
+  {
     name: "DESIGN TEAM",
     photo: "../assets/team/design_team.jpg",
     leads: "Leads: ###",
@@ -240,6 +246,7 @@ function changeTeam(direction) {
     updateTeamDisplay();
     card.classList.remove("fade-out");
     card.classList.add("fade-in");
+    setTimeout(() => card.classList.remove("fade-in"), 400);
   }, 300);
 }
 
@@ -252,6 +259,7 @@ function goToTeam(index) {
     updateTeamDisplay();
     card.classList.remove("fade-out");
     card.classList.add("fade-in");
+    setTimeout(() => card.classList.remove("fade-in"), 400);
   }, 300);
 }
 

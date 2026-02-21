@@ -216,8 +216,8 @@ body {
 }
 
 .navbar-logo-img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
@@ -243,10 +243,11 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
+  font-size: 20px;
 }
 
 .navbar-links a:hover {
-  color: #8b4000;
+  text-decoration: underline;
 }
 
 /* Content Sections */
