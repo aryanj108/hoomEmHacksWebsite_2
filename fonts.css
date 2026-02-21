@@ -2,3 +2,8 @@
   font-family: 'Atlantis';
   src: url('../fonts/AtlantisHeadline-Bold.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Atlantis1';
+  src: url('../fonts/AtlantisText-Bold.ttf') format('truetype');
+}

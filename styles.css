@@ -234,9 +234,10 @@ body {
 }
 
 .navbar-links a {
+  font-family: 'Atlantis1';
   color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
@@ -1191,6 +1192,7 @@ body {
 
 /* Individual Cards */
 .track-card {
+  font-family: "Atlantis";
   background: rgba(63, 63, 63, 0.3);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
