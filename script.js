@@ -134,8 +134,8 @@ window.addEventListener("scroll", () => {
   // Adjust scrollbar-track height based on scroll position
   const distanceFromBottom = document.documentElement.scrollHeight - (scrollTop + window.innerHeight);
   if (distanceFromBottom <= 200) {
-    // near bottom, steadily retract scrollbar track to 90%
-    const trackHeight = 90 + distanceFromBottom/20;
+    // near bottom, steadily retract scrollbar track to 96%
+    const trackHeight = 96 + distanceFromBottom/20;
     track.style.height = `${trackHeight}%`;
   } else {
     track.style.height = "100%";
