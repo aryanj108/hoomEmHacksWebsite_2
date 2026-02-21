@@ -1671,12 +1671,17 @@ body {
 }
 
 .footer-bottom-bar {
-  background-color: #001a33; 
+  background-image: url('../updatedAssets/footer.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 400px; 
   padding: 30px 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   gap: 10px;
 }
 
