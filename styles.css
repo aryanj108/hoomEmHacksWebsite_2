@@ -146,7 +146,7 @@ body {
   height: 100%;
   overflow: visible;
   pointer-events: none;
-  z-index: 15;
+  z-index: 998;
 }
 
 .ocean-bubbles .bubble {
