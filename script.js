@@ -141,8 +141,6 @@ window.addEventListener("scroll", () => {
   if (midOcean) midOcean.style.transform = `translateY(${scrolled * 0.4}px)`;
   if (shallowOcean)
     shallowOcean.style.transform = `translateY(${scrolled * 0.6}px)`;
-  if (oceanBubblesEl)
-    oceanBubblesEl.style.transform = `translateY(${scrolled * 0.7}px)`;
 });
 
 // Navbar Show/Hide on Scroll
