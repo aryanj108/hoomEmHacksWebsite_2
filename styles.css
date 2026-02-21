@@ -234,7 +234,7 @@ body {
 }
 
 .navbar-links li:last-child a {
-  margin-right: 100px;
+  margin-right: 130px;
 }
 
 .navbar-links a {
@@ -729,7 +729,7 @@ body {
 /* Custom Scrollbar Container */
 .custom-scrollbar {
   position: fixed;
-  right: 20px;
+  right: 55px;
   top: 0;
   width: 60px;
   height: 100vh;
@@ -740,7 +740,7 @@ body {
 /* Scrollbar Track */
 .custom-scrollbar-track {
   position: fixed;
-  right: 40px;
+  right: 74px;
   top: 0;
   width: 12px;
   height: 100%;
@@ -754,8 +754,8 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   top: 0;
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   cursor: pointer;
   pointer-events: auto;
   transition: transform 0.15s ease;
