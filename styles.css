@@ -12,6 +12,10 @@ body {
   font-family: "Courier New", monospace;
   overflow-x: hidden;
   background: #99ccee;
+  background-image: url('../updatedAssets/Frame.svg');
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: top center;
 }
 
 /* Landing Section */
