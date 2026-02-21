@@ -1672,10 +1672,11 @@ body {
 
 .footer-bottom-bar {
   background-image: url('../updatedAssets/footerBackground.svg');
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: center center;
-  height: calc(100vw * 0.37);
+  background-position: bottom center;
+  height: auto;
+  min-height: 800px; /* adjust this to control how much of the bottom you see */
   padding: 30px 20px;
   text-align: center;
   display: flex;
