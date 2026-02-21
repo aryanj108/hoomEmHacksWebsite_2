@@ -93,8 +93,15 @@ function createOceanBubble() {
   bubble.style.animationDuration = Math.random() * 10 + 10 + "s";
   bubble.style.animationDelay = Math.random() * 5 + "s";
   bubble.style.position = "fixed";
-  document.getElementById("oceanBubbles").appendChild(bubble);
+  bubble.style.cursor = "pointer"; 
 
+  // Pop on click
+  bubble.addEventListener("click", () => {
+    bubble.classList.add("popping");
+    setTimeout(() => bubble.remove(), 300);
+  });
+
+  document.getElementById("oceanBubbles").appendChild(bubble);
   setTimeout(() => bubble.remove(), 20000);
 }
 
