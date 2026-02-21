@@ -646,6 +646,8 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  filter: drop-shadow(0 0 0px rgba(191, 87, 0, 0));
+  transition: filter 0.3s ease;
 }
 
 #registButton:hover {
