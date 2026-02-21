@@ -139,7 +139,9 @@ body {
 
 /* Animated bubbles for main content */
 .ocean-bubbles {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: visible;
@@ -1679,12 +1681,18 @@ body {
 }
 
 .footer-bottom-bar {
-  background-image: url('../updatedAssets/footerBackground.svg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: bottom center;
+  background-image: 
+    linear-gradient(
+      to bottom,
+      #99ccee 0,
+      transparent 15%
+    ),
+    url('../updatedAssets/footerBackground.svg');
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, bottom center;
   height: auto;
-  min-height: 800px; /* adjust this to control how much of the bottom you see */
+  min-height: 800px; 
   padding: 30px 20px;
   text-align: center;
   display: flex;

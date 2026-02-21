@@ -79,7 +79,7 @@ function createOceanBubble() {
   const size = Math.random() * 60 + 20;
   bubble.style.width = size + "px";
   bubble.style.height = size + "px";
-  bubble.style.left = Math.random() * 100 + "%";
+  bubble.style.left = Math.random() * 100 + "vw";
   bubble.style.bottom = "-100px";
   bubble.style.animationDuration = Math.random() * 10 + 10 + "s";
   bubble.style.animationDelay = Math.random() * 5 + "s";
