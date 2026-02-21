@@ -1,3 +1,5 @@
+@import url('fonts.css');
+
 .svg-background-overlay {
   pointer-events: none;
 }
@@ -745,8 +747,8 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   top: 0;
-  width: 140px;
-  height: 140px;
+  width: 110px;
+  height: 110px;
   cursor: pointer;
   pointer-events: auto;
   transition: transform 0.15s ease;
@@ -1094,7 +1096,7 @@ body {
 }
 
 #about h2 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Atlantis';
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 4px;
