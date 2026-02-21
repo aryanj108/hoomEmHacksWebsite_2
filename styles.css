@@ -229,7 +229,7 @@ body {
 
 .navbar-links {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   list-style: none;
 }
 
@@ -282,7 +282,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
   transition: transform 0.3s;
 }
 
@@ -1384,8 +1384,6 @@ body {
   overflow: hidden;
   margin-bottom: 40px;
   padding: 10px 0px;
-  background: rgba(0, 10, 20, 0);
-  backdrop-filter: blur(8px);
   /* THE FADE EFFECT */
   -webkit-mask-image: linear-gradient(
     to right,
@@ -1486,6 +1484,16 @@ body {
 
 .sponsor-logo-container img[src*="red-bulls"] {
   transform: scale(1);
+}
+
+.sponsor-logo-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .sponsor-logo-container:hover {
