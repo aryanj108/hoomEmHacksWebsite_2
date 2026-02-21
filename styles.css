@@ -1671,11 +1671,11 @@ body {
 }
 
 .footer-bottom-bar {
-  background-image: url('../updatedAssets/footer.svg');
+  background-image: url('../updatedAssets/footerBackground.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 400px; 
+  height: calc(100vw * 0.367);
   padding: 30px 20px;
   text-align: center;
   display: flex;
