@@ -1,4 +1,4 @@
-@import url('fonts.css');
+@import url("fonts.css");
 
 .svg-background-overlay {
   pointer-events: none;
@@ -13,7 +13,7 @@
 body {
   font-family: "Courier New", monospace;
   overflow-x: hidden;
-  background-image: 
+  background-image:
     repeating-linear-gradient(
       to bottom,
       #99ccee 0,
@@ -21,10 +21,14 @@ body {
       transparent calc(100vw * 0.62),
       #99ccee calc(100vw * 0.667)
     ),
-    url('../updatedAssets/websiteBackground.svg');
-  background-size: 100% auto, 100% auto;
+    url("../updatedAssets/websiteBackground.svg");
+  background-size:
+    100% auto,
+    100% auto;
   background-repeat: repeat-y, repeat-y;
-  background-position: top center, top center;
+  background-position:
+    top center,
+    top center;
   background-color: #99ccee;
 }
 
@@ -162,15 +166,24 @@ body {
   border-radius: 50%;
   animation: rise 15s infinite ease-in;
   backdrop-filter: blur(1px); /* Use to change intensity of blur */
-  -webkit-backdrop-filter: blur(1px); 
+  -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   pointer-events: auto; /* Disable pointer events for bubbles (make it none)*/
 }
 
 @keyframes pop {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.8); opacity: 0.5; }
-  100% { transform: scale(0); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
 }
 
 .bubble.popping {
@@ -264,7 +277,7 @@ body {
 }
 
 .navbar-links a {
-  font-family: 'Atlantis1';
+  font-family: "Atlantis1";
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
@@ -472,7 +485,7 @@ body {
   min-width: 500px;
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid rgba(255,255,255,0.15);
+  border: 2px solid rgba(255, 255, 255, 0.15);
   background: rgba(0, 20, 50, 0.4);
   backdrop-filter: blur(10px);
 }
@@ -484,12 +497,12 @@ body {
 
 .time-col {
   flex: 0 0 60px;
-  border-right: 1px solid rgba(255,255,255,0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .day-col {
   flex: 1;
-  border-right: 1px solid rgba(255,255,255,0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .day-col:last-child {
@@ -507,7 +520,7 @@ body {
   color: #ffffff;
   letter-spacing: 2px;
   background: rgba(0, 30, 70, 0.6);
-  border-bottom: 2px solid rgba(255,255,255,0.15);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 }
 
 .time-slot {
@@ -517,8 +530,8 @@ body {
   justify-content: center;
   font-family: "Test3";
   font-size: 11px;
-  color: rgba(255,255,255,0.5);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   letter-spacing: 1px;
 }
 
@@ -541,7 +554,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   cursor: default;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
   overflow: hidden;
 }
 
@@ -562,16 +577,31 @@ body {
 .event-time {
   font-family: "Courier New", monospace;
   font-size: 10px;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 4px;
 }
 
 /* Event Colors */
-.color-blue   { background: rgba(0, 80, 200, 0.75);  border-left: 3px solid #4da6ff; }
-.color-teal   { background: rgba(0, 140, 160, 0.75); border-left: 3px solid #00d9ff; }
-.color-orange { background: rgba(180, 80, 0, 0.75);  border-left: 3px solid #ff8c00; }
-.color-green  { background: rgba(20, 120, 60, 0.75); border-left: 3px solid #00e676; }
-.color-purple { background: rgba(80, 0, 160, 0.75);  border-left: 3px solid #bf7fff; }
+.color-blue {
+  background: rgba(0, 80, 200, 0.75);
+  border-left: 3px solid #4da6ff;
+}
+.color-teal {
+  background: rgba(0, 140, 160, 0.75);
+  border-left: 3px solid #00d9ff;
+}
+.color-orange {
+  background: rgba(180, 80, 0, 0.75);
+  border-left: 3px solid #ff8c00;
+}
+.color-green {
+  background: rgba(20, 120, 60, 0.75);
+  border-left: 3px solid #00e676;
+}
+.color-purple {
+  background: rgba(80, 0, 160, 0.75);
+  border-left: 3px solid #bf7fff;
+}
 /* Hero Section with UT Tower and Banner */
 .hero-section {
   min-height: 100vh;
@@ -675,10 +705,10 @@ body {
 /* register button */
 #registButton {
   position: absolute;
-  top: 55%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  z-index: 10; 
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
   background: none;
   border: none;
   cursor: pointer;
@@ -687,10 +717,9 @@ body {
 }
 
 #registButton:hover {
-  filter: drop-shadow(0 0 6px rgba(191, 87, 0, 0.9)) 
-        drop-shadow(0 0 14px rgba(191, 87, 0, 0.5));
+  filter: drop-shadow(0 0 6px rgba(191, 87, 0, 0.9))
+    drop-shadow(0 0 14px rgba(191, 87, 0, 0.5));
 }
-
 
 @keyframes float {
   0%,
@@ -1138,7 +1167,7 @@ body {
 }
 
 #about h2 {
-  font-family: 'Test';
+  font-family: "Test";
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1196,7 +1225,7 @@ body {
 
 .tracks-heading {
   text-align: center;
-  font-family: 'Test';
+  font-family: "Test";
   font-size: 3rem;
   margin-bottom: 50px;
   text-transform: uppercase;
@@ -1253,7 +1282,6 @@ body {
   font-size: 1.8rem;
   margin-bottom: 20px;
   letter-spacing: 2px;
-  
 }
 
 .track-card p {
@@ -1275,11 +1303,11 @@ body {
 
 .jellyfish-2 {
   left: -160px;
-  top: 240px;
+  top: 260px;
   width: 200px;
   transform: rotate(10deg);
   animation: jellyfishFloat2 9s ease-in-out infinite;
-  animation-delay: 0s;
+  animation-delay: 0.5s;
 }
 
 .jellyfish-3 {
@@ -1301,20 +1329,40 @@ body {
 }
 
 @keyframes jellyfishFloat1 {
-  0%, 100% { transform: rotate(0deg) translateY(0px); }
-  50% { transform: rotate(0deg) translateY(-32px); }
+  0%,
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(-32px);
+  }
 }
 @keyframes jellyfishFloat2 {
-  0%, 100% { transform: rotate(-10deg) translateY(0px); }
-  50% { transform: rotate(-10deg) translateY(-8px); }
+  0%,
+  100% {
+    transform: rotate(-10deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(-10deg) translateY(-8px);
+  }
 }
 @keyframes jellyfishFloat3 {
-  0%, 100% { transform: rotate(10deg) translateY(0px); }
-  50% { transform: rotate(10deg) translateY(-32px); }
+  0%,
+  100% {
+    transform: rotate(10deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(10deg) translateY(-32px);
+  }
 }
 @keyframes jellyfishFloat4 {
-  0%, 100% { transform: rotate(15deg) translateY(0px); }
-  50% { transform: rotate(15deg) translateY(-28px); }
+  0%,
+  100% {
+    transform: rotate(15deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(15deg) translateY(-28px);
+  }
 }
 
 .jellyfish-decoration {
@@ -1372,7 +1420,7 @@ body {
 .faq-side img {
   width: 950px;
   height: 950px;
-  transform: translateX(-100px) translateY(-100px);;
+  transform: translateX(-100px) translateY(-100px);
 }
 
 @keyframes faqGraphicFloat {
@@ -1402,7 +1450,7 @@ body {
 }
 
 .sponsors-header h2 {
-  font-family: "Test";  
+  font-family: "Test";
   font-size: 48px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1500,6 +1548,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 19%;
 }
 
 .sponsor-tier {
@@ -1751,18 +1800,18 @@ body {
 }
 
 .footer-bottom-bar {
-  background-image: 
-    linear-gradient(
-      to bottom,
-      #99ccee 0,
-      transparent 15%
-    ),
-    url('../updatedAssets/footerBackground.svg');
-  background-size: 100% auto, 100% auto;
+  background-image:
+    linear-gradient(to bottom, #99ccee 0, transparent 15%),
+    url("../updatedAssets/footerBackground.svg");
+  background-size:
+    100% auto,
+    100% auto;
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom center, bottom center;
+  background-position:
+    bottom center,
+    bottom center;
   height: auto;
-  min-height: 800px; 
+  min-height: 800px;
   padding: 30px 20px;
   text-align: center;
   display: flex;
