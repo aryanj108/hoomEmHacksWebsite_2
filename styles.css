@@ -702,10 +702,50 @@ body {
   display: block;
 }
 
+/* Banner text overlay */
+.banner-text {
+  position: absolute;
+  top: 40%; 
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.banner-text p {
+  color: #e08908;
+  font-family: "IntroFont";
+  font-size: 35px;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  white-space: nowrap;
+  -webkit-text-stroke: 2px #000000; 
+}
+
 /* register button */
 #registButton {
+  position: relative; /* already absolute, so add this to contain the span */
+}
+
+.register-label {
   position: absolute;
-  top: 55%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e08908;
+  font-family: "IntroFont";
+  font-size: 25px;
+  letter-spacing: 2px;
+  pointer-events: none;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  white-space: nowrap;
+  -webkit-text-stroke: 1.5px #000000; 
+}
+
+#registButton {
+  position: absolute;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -1171,7 +1211,8 @@ body {
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #000000;
+  color: #f7ce79;
+  -webkit-text-stroke: 1.5px #000000; 
   margin-bottom: 20px;
   font-weight: 900;
   text-align: center;
