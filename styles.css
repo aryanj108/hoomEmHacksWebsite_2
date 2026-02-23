@@ -516,8 +516,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Test";
+  font-family: "IntroFont";
   font-size: 20px;
+  -webkit-text-stroke: 1px #000000;
   font-weight: 300;
   color: #f7ce79;
   letter-spacing: 2px;
