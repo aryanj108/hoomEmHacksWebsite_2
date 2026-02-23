@@ -256,13 +256,13 @@ body {
 
 .navbar-links {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   list-style: none;
 }
 
 .navbar-links li:last-child a {
   color: #5ac8e8;
-  margin-right: 130px;
+  margin-right: 110px;
   border: 2px solid #5ac8e8;
   border-radius: 50px;
   padding: 8px 20px;
@@ -282,7 +282,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .navbar-links a:hover {
@@ -853,7 +853,7 @@ body {
   position: absolute;
   left: 53%;
   transform: translate(-50%, 0);
-  top: 30px;
+  top: 40px;
   width: 100px;
   height: 100px;
   cursor: pointer;
