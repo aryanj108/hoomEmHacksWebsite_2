@@ -586,7 +586,6 @@ body {
   border: 3px solid #1a1a4d;
   border-radius: 15px;
   padding: 20px 25px;
-  margin-top: 20px;
   text-align: center;
   font-size: 14px;
   color: #1a1a4d;
@@ -595,7 +594,7 @@ body {
 }
 
 .faq-contact a {
-  color: #490228;
+  color: #05465a;
   text-decoration: none;
   font-weight: bold;
 }
