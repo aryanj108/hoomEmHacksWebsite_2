@@ -1956,12 +1956,13 @@ body {
 
 /* Tier 1 - Platinum (Largest) */
 .tier-1 .sponsor-logo-container {
-  width: 350px;
-  height: 160px;
+  width: 220px;
+  height: 140px;
 }
 
 .tier-1 .sponsor-tier-logos {
-  gap: 5px;
+  gap: 20px;  
+  flex-wrap: nowrap;
 }
 
 /* Tier 2 - Gold (Medium-Large) */
