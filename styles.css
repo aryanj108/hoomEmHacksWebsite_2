@@ -1836,18 +1836,12 @@ body {
   transition: transform 0.3s ease;
 }
 
-.sponsor-logo-item {
-  flex-shrink: 0;
-  width: 150px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: none;
-  transition: transform 0.3s ease;
+.sponsor-logo-item img[src*="awsLogo"] {
+  transform: scale(0.8); 
+}
+
+.sponsor-logo-item img[src*="janeStreet"] {
+  transform: scale(1.2); 
 }
 
 .sponsor-logo-item a {
