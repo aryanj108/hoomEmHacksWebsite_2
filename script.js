@@ -33,7 +33,7 @@ const teams = [
     name: "HOOK EM' HACKS 2026 TEAM",
     photo: "./assets/team/design_team.jpg",
     leads: "Director: Maanya Chugh",
-    members: "Anika Srinivasan, Aristoteles Cortes-Loera, Aryan Jalota, Damodar Kamani, Harini Champooranan, Hrishi Kamireddy, Kyra Browning, Lillian Cutrer, Nasser Shaik, Nima Ansari, Noah Fishman, Priscilla Ye, Shrestha Mishra, Sofia Porras, Sophie Liu, Swyam Dubey",
+    members: "Anika Srinivasan, Aristoteles Cortes-Loera, Aryan Jalota, Damodar Kamani, Harini Champooranan, Hrishi Kamireddy, Kyra Browning, Lillian Cutrer, Nasser Shaik, Nima Ansari, Noah Fishman, Priscilla Ye, Shrestha Mishra, Sofia Porras, Sophie Liu, Swyam Dubey, Keerti Koya",
   },
   {
     name: "TECH TEAM",
@@ -57,7 +57,7 @@ const teams = [
     name: "EXPERIENCE TEAM",
     photo: "./assets/team/operations_team.jpg",
     leads: "Priscilla Ye",
-    members: "Damodar Kamani, Swyam Dubey",
+    members: "Damodar Kamani, Swyam Dubey, Keerti Koya",
   },
   {
     name: "SPONSORSHIP TEAM",
