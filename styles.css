@@ -643,22 +643,22 @@ body {
 .pill-all:hover:not(.active) { background: rgba(0,0,0,0.1); }
 
 /* Required — blue */
-.pill-required              { border-color: #5ac8e8; color: #5ac8e8; }
+.pill-required              { border-color: #749ff6; color: #749ff6; }
 .pill-required.active,
 .pill-required:hover        { background: rgba(90,200,232,0.2); }
 
 /* Event — green */
-.pill-event              { border-color: #27ae60; color: #27ae60; }
+.pill-event              { border-color: #739e5b; color: #739e5b; }
 .pill-event.active,
 .pill-event:hover        { background: rgba(39,174,96,0.2); }
 
 /* Food — yellow */
-.pill-food              { border-color: #e8c030; color: #c8a000; }
+.pill-food              { border-color: #f89619; color: #f89619; }
 .pill-food.active,
 .pill-food:hover        { background: rgba(232,192,48,0.2); }
 
 /* For Fun — pink */
-.pill-forfun              { border-color: #ff79c6; color: #ff79c6; }
+.pill-forfun              { border-color: #d84447; color: #d84447; }
 .pill-forfun.active,
 .pill-forfun:hover        { background: rgba(255,121,198,0.2); }
 
