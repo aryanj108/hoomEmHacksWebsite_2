@@ -49,6 +49,7 @@
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#partners">Partners</a></li>
         <li><a href="#team">Meet the Team</a></li>
         <li><a href="https://forms.gle/RaPX1hgw51VMnHM28" target="_blank">Register</a></li>
       </ul>
@@ -110,28 +111,28 @@
 
         <div class="about-stats">
           <div class="stat-card">
-            <span class="stat-number">300+</span>
-            <span class="stat-label">Hackers</span>
+            <span class="stat-number">~250</span>
+            <span class="stat-label">Selected Builders</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">50%</span>
-            <span class="stat-label">First-Time Coders</span>
+            <span class="stat-number">70%</span>
+            <span class="stat-label">Early-Career Engineers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Majors Represented</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">40%</span>
             <span class="stat-label">Women / Non-Binary</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">70%</span>
-            <span class="stat-label">Freshmen & Sophomores</span>
+            <span class="stat-number">25+</span>
+            <span class="stat-label">Mentors & Industry Judges</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">25</span>
-            <span class="stat-label">Mentors</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">10K+</span>
-            <span class="stat-label">Impressions</span>
+            <span class="stat-number">100K+</span>
+            <span class="stat-label">Campus & Digital Reach</span>
           </div>
         </div>
 
@@ -216,6 +217,8 @@
       </div>
       <section id="schedule" class="section">
         <h2>Event Schedule</h2>
+        <!-- Filter pills hidden: schedule uses static SVG images -->
+        <!--
         <div class="schedule-filter-pills">
         <button class="pill pill-all active" data-filter="all">All</button>
         <button class="pill pill-required" data-filter="required">Required</button>
@@ -223,6 +226,7 @@
         <button class="pill pill-food" data-filter="food">Food</button>
         <button class="pill pill-forfun" data-filter="forfun">For Fun</button>
       </div>
+      -->
       
       <div class="schedule-svg-wrapper">
         <img src="./updatedAssets/dayOneSchedule.svg" alt="Day 1 Schedule" class="schedule-svg" />
@@ -752,74 +756,11 @@
 
       </section>
 
-      <section id="team" class="team-section">
-        <h2>Meet the Team</h2>
-
-        <!-- <div class="team-tabs" id="teamTabs"></div> -->
-
-        <div class="team-carousel-container">
-          <button
-            class="team-arrow team-arrow-left"
-            onclick="changeTeam(-1)"
-            aria-label="Previous team"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-
-          <div class="team-card" id="teamCard">
-            <div class="team-photo-container">
-              <img
-                id="teamPhoto"
-                src="./assets/team/design_team.jpg"
-                alt="Design Team"
-              />
-              <div class="team-coming-soon">Coming Soon</div>
-            </div>
-            <div class="team-info">
-              <h3 id="teamName"></h3>
-              <div class="team-detail">
-                <span class="team-label">Leads</span>
-                <p id="teamLeads"></p>
-              </div>
-              <div class="team-detail">
-                <span class="team-label">Members</span>
-                <p id="teamMembers"></p>
-              </div>
-            </div>
-          </div>
-
-          <button
-            class="team-arrow team-arrow-right"
-            onclick="changeTeam(1)"
-            aria-label="Next team"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
+      <section id="partners" class="section partners-section">
+        <h3 class="partners-title">Partners</h3>
+        <div class="partners-logos">
+          <img src="./updatedAssets/shipvelric.jpg" alt="Ship | Velric" class="partner-logo" />
         </div>
-
-        <div class="team-indicators" id="teamIndicators"></div>
       </section>
     </div>
 
@@ -831,15 +772,76 @@
           class="footer-campus-img"
         />
       </div>
-      <div class="partners-section">
-        <h3 class="partners-title">Partners</h3>
-        <div class="partners-coming-soon">
-          <span class="partners-bubble"></span>
-          <span class="partners-text">Coming Soon</span>
-          <span class="partners-bubble"></span>
-        </div>
-      </div>
       <div class="footer-bottom-bar">
+        <section id="team" class="team-section">
+          <h2>Meet the Team</h2>
+
+          <!-- <div class="team-tabs" id="teamTabs"></div> -->
+
+          <div class="team-carousel-container">
+            <button
+              class="team-arrow team-arrow-left"
+              onclick="changeTeam(-1)"
+              aria-label="Previous team"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+
+            <div class="team-card" id="teamCard">
+              <div class="team-photo-container">
+                <img
+                  id="teamPhoto"
+                  src="./assets/team/design_team.jpg"
+                  alt="Design Team"
+                />
+                <!-- <div class="team-coming-soon">Coming Soon</div> -->
+              </div>
+              <div class="team-info">
+                <h3 id="teamName"></h3>
+                <div class="team-detail">
+                  <span class="team-label">Leads</span>
+                  <p id="teamLeads"></p>
+                </div>
+                <div class="team-detail">
+                  <span class="team-label">Members</span>
+                  <p id="teamMembers"></p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="team-arrow team-arrow-right"
+              onclick="changeTeam(1)"
+              aria-label="Next team"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <div class="team-indicators" id="teamIndicators"></div>
+        </section>
         <p class="footer-made-with">Made with 💕  by the Hook 'Em Hacks Team 🐂🧡🤘</p>
         <p class="footer-copyright">© 2026 Hook 'Em Hacks. Hook 'Em.<br> 
           All Rights Reserved.</p>
